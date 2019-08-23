@@ -6,13 +6,15 @@ The **Webfolio** Theme is a basic theme for creating an online portfolio with [G
 
 My own personal website uses this theme. Feel free to [check it out](https://jasoncarloscox.com) or even look at the [source code](https://gitlab.com/jasonccox/personal-site).
 
-## Usage
+## Intstallation
 
-Simply download this repository and place it in the `user/themes/` directory of your Grav install. Then edit `user/config/system.yaml` to contain the following:
-```yaml
-pages:
-  theme: webfolio
-```
+1. From the root of your Grav installation, run `bin/gpm install webfolio`.
+   - Alternatively, download this repository, unzip it, rename the folder to `webfolio`, and place it in the `user/themes/` directory of your Grav install
+2. Edit `user/config/system.yaml` to contain the following:
+	```yaml
+	pages:
+		theme: webfolio
+	```
 
 Alternatively, you can install Webfolio via the Grav Admin interface.
 

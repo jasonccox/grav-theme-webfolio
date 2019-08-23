@@ -1,0 +1,133 @@
+* {
+	box-sizing: border-box;
+}
+
+:hover {
+	transition: color $transition-time-hover, background-color $transition-time-hover;
+}
+
+body {
+	background-color: $color-bg;
+	color: $color-text;
+	font-family: $font-family-base;
+	font-size: $font-size-s;
+	font-weight: $font-weight-normal;
+	margin: 0;
+	padding: 0 0 (2rem + 2*$font-size-s) 0; // needs to match footer height
+	min-height: 100%;
+	position: absolute;
+	top: 0;
+	width: 100%;
+
+	&.mobile-nav-open {
+		overflow-y: hidden;
+	}
+}
+
+@media only screen and (min-width: $screen-s) {
+	body {
+		padding: 0 0 (2rem + $font-size-s) 0;
+	}
+}
+
+.bg-alt {
+	background-color: $color-bg-alt;
+}
+
+a {
+	color: $color-accent;
+	text-decoration: none;
+
+	&:hover {
+		color: darken($color-accent, $darken-hover)
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: $font-weight-bold;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+
+	&:first-child {
+		margin-top: 0;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+h1 {
+	font-size: $font-size-xxl;
+}
+
+h2 {
+	font-size: $font-size-xl;
+}
+
+h3 {
+	font-size: $font-size-l;
+}
+
+h4 {
+	font-size: $font-size-m;
+}
+
+h5 {
+	font-size: $font-size-s;
+}
+
+h6 {
+	font-size: $font-size-s;
+}
+
+input, textarea, button {
+	font-family: $font-family-base;
+	font-size: $font-size-s;
+	color: $color-text;
+}
+
+input, textarea {
+	border-radius: 0;
+	border-width: 0.05rem;
+	border-color: darken($color-bg, 20%);
+	border-style: solid;
+	padding: 0.3rem;
+	width: 100%;
+
+	.bg-alt & {
+		border-color: darken($color-bg-alt, 20%);
+	}
+
+	&:focus {
+		border-color: $color-accent;
+	}
+}
+
+button {
+	background-color: $color-accent;
+	color: $color-bg;
+	border: none;
+	padding: 0.5rem;
+
+	&:hover {
+		background-color: darken($color-accent, $darken-hover);
+	}
+
+	.bg-alt & {
+		color: $color-bg-alt;
+	}
+}
+
+.form-field {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.form-label {
+	margin-bottom: 0.5rem;
+}
+
+.required {
+	color: $color-required;
+}

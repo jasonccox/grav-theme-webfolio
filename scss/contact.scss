@@ -1,0 +1,64 @@
+.contact__btn {
+	border: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	padding: 1rem;
+	margin: 4rem auto;
+	max-width: 100%;
+}
+
+.contact__btn__icon, .contact__btn__txt {
+	display: inline-block;
+}
+
+.contact__btn__icon {
+	font-size: $font-size-s;
+}
+
+.contact__btn__txt {
+	font-size: $font-size-xs;
+	margin-left: 0;
+	margin-right: 0;
+	word-break: break-all;
+}
+
+.contact__btn__txt.with-icon {
+	margin-left: 1rem;
+}
+
+@media only screen and (min-width: $screen-xs) {
+	.contact__btn__icon {
+		font-size: $font-size-m;
+	}
+	
+	.contact__btn__txt {
+		font-size: $font-size-s;
+	}
+}
+
+@media only screen and (min-width: $screen-s) {
+	.contact__btn__icon {
+		font-size: $font-size-l;
+	}
+	
+	.contact__btn__txt {
+		font-size: $font-size-m;
+	}
+}
+
+.contact__divider {
+	margin: 1rem auto;
+	background-color: darken($color-bg, 20%);
+	height: 0.1rem;
+	width: calc(50% - 2rem);
+
+	.bg-alt & {
+		background-color: darken($color-bg-alt, 20%);
+	}
+}
+
+.contact__form {
+	margin: 4rem auto;
+}

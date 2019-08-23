@@ -1,0 +1,45 @@
+.about__details {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: center;
+}
+
+.about__detail {
+	flex: 0 calc(100% - 6rem);
+	max-width: $screen-xs;
+	margin: 3rem auto;
+	text-align: center;
+}
+
+.about__detail__icon {
+	font-size: 8rem; 
+	width: 12rem; 
+	height: 12rem; 
+	border-radius: 50%;
+	background-color: $color-accent;
+	color: $color-bg;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+
+	i {
+		padding: 2rem 0;
+	}
+
+	.bg-alt & {
+		color: $color-bg-alt;
+	}
+}
+
+@media only screen and (min-width: $screen-m) {
+	.about__details {
+		flex-direction: row;
+	}
+
+	.about__detail {
+		flex: 0 calc(33% - 4rem);
+		margin: 2rem;
+	}
+}

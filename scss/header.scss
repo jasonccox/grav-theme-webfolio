@@ -1,0 +1,36 @@
+.header {
+	padding: 0 1rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 5rem;
+	z-index: 2;
+	background-color: $color-bg;
+	border-bottom: 0.03rem darken($color-bg, 10%) solid;
+	transition: all 0.5s ease;
+
+	.scrolled & {
+		height: 3rem;
+	}
+}
+
+.header__content {
+	max-width: $screen-l;
+	margin: 0 auto;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+}
+
+.logo__img {
+	height: 3rem;
+	transition: all 0.5s ease;
+
+	.scrolled & {
+		height: 2rem;
+	}
+}

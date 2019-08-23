@@ -1,0 +1,19 @@
+<section class="section modular {{ page.header.class }}">
+    <section class="container projects">
+        {{ content|raw }}
+        
+        <div class="projects__cards">
+            {% for project in page.header.projects %}
+                <div class="projects__card">
+                    <a href="{{ project.link }}" target="_blank">
+                        {{ page.media[project.image].html('', project.title, 'projects__card__img')|raw }}
+                        <div class="projects__card__txt">
+                            <h4>{{ project.title }}</h4>
+                            <div>{{ project.description }}</div>
+                        </div>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+</section>

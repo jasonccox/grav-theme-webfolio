@@ -1,0 +1,172 @@
+.navigation {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+
+	li {
+		font-weight: $font-weight-bold;
+		font-size: $font-size-xs;
+		margin-top: 1rem;
+		margin-right: 0;
+	
+			&:first-child {
+				margin-top: 0;
+			}
+
+		a {
+			color: $color-text;
+
+			&.active, &:hover {
+				color: $color-accent;
+			}
+		}
+	}
+}
+
+.nav--mobile__nav .navigation li {
+	font-size: $font-size-s;
+
+	a {
+		color: $color-bg;
+
+		&.active, &:hover {
+			color: $color-accent;
+		}
+	}
+}
+
+@media only screen and (min-width: $screen-m) {
+	.navigation {
+
+		li {
+			display: inline-block;
+			margin-top: 0;
+			margin-bottom: 0;
+			margin-left: 2rem;
+			margin-right: 0;
+	
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+	}
+}
+
+.nav--main {
+	display: none;
+}
+
+.nav--mobile__toggle {
+	position: fixed;
+	z-index: 100;
+	top: 1.75rem;
+	right: 1rem;
+	width: 2rem;
+	height: 2rem;
+	cursor: pointer;
+	transition: opacity .25s ease, top .5s ease;
+	background-color: unset;
+	padding: 0;
+	margin: 0;
+
+	span {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 0.3rem;
+		cursor: pointer;
+		transition: all .35s ease, background-color 0s;
+		border: none;
+		background-color: $color-accent;
+
+		&.top{
+			top: 0;
+		}
+
+		&.middle{
+			top: 0.6rem;
+		}
+
+		&.bottom{
+			top: 1.2rem;
+		}
+	}
+
+	&:hover {
+		background-color: unset;
+
+		span {
+			background-color: darken($color-accent, $darken-hover);
+		}
+	}
+
+	&.active {
+		span {
+			background-color: $color-bg;
+
+			&.top{
+				transform: translateY(0.6rem) translateX(0) rotate(45deg);
+			}
+	
+			&.middle{
+				opacity: 0;
+			}
+	
+			&.bottom{
+				transform: translateY(-0.6rem) translateX(0) rotate(-45deg);
+			}
+			
+		}
+
+		&:hover span {
+			background-color: darken($color-bg, $darken-hover);
+		}
+	}
+
+	.scrolled & {
+		top: 0.75rem;
+	}
+}
+
+.nav--mobile__overlay {
+	visibility: hidden;
+	position: fixed;
+	z-index: 99;
+	top: 0;
+	width: 100%;
+	height: 0;
+	opacity: 0;
+	transition: opacity .35s,visibility .35s,height .35s;
+	background-color: black;
+	padding: 1rem;
+
+	.logo__img {
+		height: 3rem;
+	}
+
+	&.open {
+		visibility: visible;
+		height: 100%;
+		opacity: 0.95;
+	}
+}
+
+@media only screen and (min-width: $screen-m) {
+	.nav--main {
+		display: block;
+	}
+
+	.nav--mobile__toggle {
+		display: none;
+	}
+
+	.nav--mobile__overlay.open {
+		display: none;
+	}
+}
+
+.nav--mobile__nav {
+	margin-top: 1rem;
+	margin-left: 1rem;
+	margin-right: 1rem;
+}

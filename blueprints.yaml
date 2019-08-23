@@ -1,0 +1,78 @@
+name: Webfolio
+version: 1.0.0
+description: A simple theme for creating an online portfolio
+icon: globe
+author:
+  name: Jason Cox
+  email: contact@jasoncarloscox.com
+homepage: https://gitlab.com/jasonccox/grav-theme-webfolio
+demo: https://jasoncarloscox.com
+keywords: grav, theme, portfolio
+bugs: https://gitlab.com/jasonccox/grav-theme-webfolio/issues
+readme: https://gitlab.com/jasonccox/grav-theme-webfolio/blob/master/README.md
+license: MIT
+
+dependencies:
+  - { name: grav, version: '>=1.6.0' }
+
+form:
+  validation: loose
+  fields:
+    custom_logo:
+      type: file
+      label: Custom Logo
+      size: large
+      destination: 'theme://images'
+      multiple: false
+      markdown: true
+      description: Will be used instead of default logo `theme://images/grav-logo.svg`
+      accept:
+        - image/*
+
+    custom_logo_mobile:
+      type: file
+      label: Mobile Custom Logo
+      size: large
+      destination: 'theme://images'
+      multiple: false
+      description: Will be used on the overlay for the mobile navigation menu
+      accept:
+        - image/*
+
+    favicon:
+      type: file
+      label: Favicon
+      size: large
+      destination: 'theme://images'
+      multiple: false
+      markdown: true
+      description: Must be a .png file
+      accept:
+        - image/png
+
+    footer_credit:
+      type: toggle
+      label: Show Credit in Footer
+      highlight: 1
+      default: 1
+      options:
+        1: PLUGIN_ADMIN.YES
+        0: PLUGIN_ADMIN.NO
+      validate:
+        type: bool
+
+    copyright:
+      type: fieldset
+      title: Copyright
+      info: Your copyright info to be displayed in the footer
+      fields:
+        copyright.year:
+          type: text
+          label: Year
+        copyright.name:
+          type: text
+          label: Copyright-Holder's Name
+        copyright.link:
+          type: text
+          label: Link Target URL
+          description: The copyright-holder's name will be a link with this target URL

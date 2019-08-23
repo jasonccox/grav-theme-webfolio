@@ -1,0 +1,35 @@
+{% set button = page.header.button %}
+{% set show_form = page.header.show_form %}
+
+<section class="section modular {{ page.header.class }}">
+    <section class="container contact">
+        <div>
+            {{ content|raw }}
+        </div>
+
+        {% if button %}
+            <a target="_blank" href="{{ button.link }}">
+                <button class="contact__btn">
+                    {% if button.icon %}
+                        <div class="contact__btn__icon"><i class="{{ button.icon }}"></i></div>
+                    {% endif %}
+                    {% if button.text %}
+                        <div class="contact__btn__txt {% if button.icon %} with-icon {% endif %}">
+                            {{ button.text }}
+                        </div>
+                    {% endif %}
+                </button>
+            </a>
+        {% endif %}
+
+        {% if button and show_form %}
+            <div class="contact__divider"></div>
+        {% endif %}
+        
+        {% if show_form %}
+            <div class="contact__form">
+                {% include 'forms/form.html.twig' %}
+            </div>
+        {% endif %}
+    </section>
+</section>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="{{ grav.language.getActive ?: grav.config.site.default_lang }}">
+<head>
+{% block head %}
+    <meta charset="utf-8" />
+    <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include 'partials/metadata.html.twig' %}
+
+    {% if config.theme.favicon %}
+        <link rel="icon" type="image/png" href="{{ url('theme://images/' ~ (config.theme.favicon|first).name) }}" />
+    {% endif %}
+    <link rel="canonical" href="{{ page.url(true, true) }}" />
+{% endblock head%}
+
+{% block stylesheets %}
+    {% do assets.addCss('theme://css/normalize.css', 98) %}
+    {% do assets.addCss('theme://css-compiled/theme.min.css', 98) %}
+    {% do assets.addCss('theme://css/custom.css', 98) %}
+{% endblock %}
+
+{% block javascripts %}
+    {% do assets.addJs('jquery', 100) %}
+    {% do assets.addJs('theme://js/theme.js', 100) %}
+{% endblock %}
+
+{% block assets deferred %}
+    {{ assets.css()|raw }}
+    {{ assets.js()|raw }}
+{% endblock %}
+</head>
+<body id="top" class="{{ page.header.body_classes }}">
+
+{% block header %}
+    <header id="header" class="header">
+        <div class="header__content">
+            <div class="header__logo">
+                {% include 'partials/logo.html.twig' %}
+            </div>
+            
+            <nav class="nav--main">
+            {% block header_navigation %}{% endblock %}
+            </nav>
+        </div>
+    </header>
+{% endblock %}
+
+{% block body %}
+    <section id="body">
+        {% block content %}{% endblock %}
+    </section>
+{% endblock %}
+
+{% block footer %}
+    <footer class="footer">
+        {% if config.theme.copyright %}
+            <span class="copyright">
+                &copy; {{ config.theme.copyright.year }} 
+                <a href="{{ config.theme.copyright.link }}" target="_blank">
+                    {{ config.theme.copyright.name }} 
+                </a>
+            </span>
+        {% endif %}
+        {% if config.theme.copyright and config.theme.footer_credit %}
+            |
+        {% endif %}
+        {% if config.theme.footer_credit %}
+        <span class="credit">
+            Created with the <a href="https://gitlab.com/jasonccox/grav-theme-webfolio" target="_blank">Webfolio</a> theme on <a href="http://getgrav.org" target="_blank">Grav</a>
+        </span>
+        {% endif %}
+    </footer>
+{% endblock %}
+
+<button class="nav--mobile__toggle" id="nav-mobile-toggle">
+    <span class="top"></span>
+    <span class="middle"></span>
+    <span class="bottom"></span>
+</button>
+
+<div class="nav--mobile__overlay" id="nav-mobile-overlay">
+    <div class="nav--mobile__overlay__logo">
+        {% include 'partials/logo.html.twig' with {mobile: true} %}
+    </div>
+    <nav class="nav--mobile__nav">
+        {% block header_navigation_mobile %}{% endblock %}
+    </nav>
+</div>
+
+{% block bottom %}
+    {{ assets.js('bottom')|raw }}
+{% endblock %}
+
+</body>
+</html>

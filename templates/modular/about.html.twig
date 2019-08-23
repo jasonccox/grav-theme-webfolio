@@ -1,0 +1,17 @@
+<section class="section modular{{ page.header.class }}">
+    <section class="container about">
+        {{ content|raw }}
+        
+        <div class="about__details">
+            {% for detail in page.header.details %}
+                <div class="about__detail">
+                    <div class="about__detail__icon">
+                        <i class="{{ detail.icon }}"></i>
+                    </div>
+                    <h4>{{ detail.title }}</h4>
+                    <div>{{ detail.content }}</div>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+</section>

@@ -1,0 +1,12 @@
+{% set logo = theme_var(mobile ? 'custom_logo_mobile' : 'custom_logo') %}
+
+{% set logo_img = "" %}
+{% if logo %}
+  {% set logo_img = media['theme://images/' ~ (logo|first).name] %}
+{% else %}
+  {% set logo_img = media['theme://images/grav-logo.svg'] %}
+{% endif %}
+
+<a href="{{ home_url }}">
+  {{ logo_img.html('', config.site.title, 'logo__img')|raw }}
+</a>

@@ -1,0 +1,38 @@
+// Colors
+$color-bg: #ffffff;
+$color-bg-alt: darken($color-bg, 2%);
+$color-text: #444444;
+$color-text-light: lighten($color-text, 15%);
+$color-text-dark: darken($color-text, 15%);
+$color-accent: #3085EE;
+$color-required: #E85600;
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i&display=swap');
+$font-family-base: 'Open Sans', sans-serif;
+
+$font-weight-thin: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 600;
+
+$font-size-base: 1.5rem;
+$font-size-xxs: 0.5 * $font-size-base; 
+$font-size-xs: 0.65 * $font-size-base; 
+$font-size-s: 0.75 * $font-size-base; 
+$font-size-m: 1 * $font-size-base; 
+$font-size-l: 1.5 * $font-size-base; 
+$font-size-xl: 2 * $font-size-base; 
+$font-size-xxl: 3 * $font-size-base; 
+
+// Screen sizes;
+$screen-xxs: 200px;
+$screen-xs: 400px;
+$screen-s: 600px;
+$screen-m: 800px;
+$screen-l: 1000px;
+$screen-xl: 1200px;
+$screen-xxl: 1400px;
+
+// Misc
+$transition-time-hover: 0.25s;
+$darken-hover: 15%;

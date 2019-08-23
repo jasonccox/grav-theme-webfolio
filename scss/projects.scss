@@ -1,0 +1,55 @@
+.projects__cards {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: center;
+}
+
+.projects__card {
+	flex: 0 calc(100% - 4rem);
+	max-width: $screen-xs;
+	margin: 2rem auto;
+	text-align: center;
+	box-shadow: 0.3rem 0.3rem 1rem;
+	transition: box-shadow $transition-time-hover;
+
+	&:hover {
+		box-shadow: 0.6rem 0.6rem 1rem;
+	}
+
+	a {
+		width: 100%;
+		color: $color-text;
+
+		&:hover {
+			color: darken($color-text, $darken-hover);
+		}
+	}
+}
+
+@media only screen and (min-width: $screen-s) {
+	.projects__cards {
+		flex-direction: row;
+	}
+
+	.projects__card {
+		flex: 0 calc(50% - 4rem);
+		margin: 2rem;
+	}
+}
+
+@media only screen and (min-width: $screen-m) {
+	.projects__card {
+		flex: 0 calc(33% - 4rem);
+	}
+}
+
+.projects__card__img {
+	width: 100%;
+}
+
+.projects__card__txt {
+	padding: 0.7rem;
+}

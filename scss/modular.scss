@@ -1,0 +1,13 @@
+.section {
+	padding: 8rem 1rem;
+
+	.container {
+		max-width: $screen-l;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&.modular:first-of-type {
+		padding-top: 12.5rem;
+	}
+}

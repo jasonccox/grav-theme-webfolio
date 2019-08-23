@@ -1,0 +1,21 @@
+{% set image = page.media.images|first %}
+
+<section class="section modular {{ page.header.class }}">
+    <section class="container intro">
+        {% if image %}
+            {{ image.html('', page.header.img_alt, 'intro__img')|raw }}
+        {% endif %}
+
+        <div class="intro__content {% if image %} with-img {% endif %}">
+            {{ content|raw }}
+            
+            <div class="intro__links">
+                {% for link in page.header.links %}
+                    <a href="{{ link.link }}" target="_blank">
+                        <i class="{{ link.icon }}"></i>
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+</section>

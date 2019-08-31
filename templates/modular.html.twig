@@ -2,11 +2,16 @@
 
 {% import 'macros/macros.html.twig' as macros %}
 
-{% set show_onpage_menu = header.onpage_menu == true or header.onpage_menu is null or header.single_page_menu %}
-{% set single_page_menu = show_onpage_menu and header.single_page_menu %}
+{% set single_page_menu = header.single_page_menu %}
+{% if header.single_page_menu is null and header.modules_in_menu is null %}
+    {# need to check onpage_menu to preserve backwards compatibility with v1.0.0 #}
+    {% set single_page_menu = header.onpage_menu %}
+{% endif %}
+
+{% set on_page_nav = single_page_menu or header.modules_in_menu %}
 
 {% block javascripts %}
-    {% if show_onpage_menu %}
+    {% if on_page_nav %}
         {% do assets.add('theme://js/singlepagenav.min.js') %}
     {% endif %}
     {{ parent() }}
@@ -14,7 +19,7 @@
 
 {% block bottom %}
     {{ parent() }}
-    {% if show_onpage_menu %}
+    {% if on_page_nav %}
         <script>
         // singlePageNav initialization & configuration
         $('ul.navigation').singlePageNav({

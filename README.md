@@ -36,8 +36,9 @@ The following customizations are available by editing `user/config/themes/webfol
 ### Page Specific
 
 Modular pages can have a bit of extra customiztion with regard to their navigation menu. Within the header of the `modular.md`, the following properties are available:
-- `onpage_menu`: If set to true or left unset, then a link will be added to the navigation menu for each module of the modular page.
-- `single_page_menu`: If set to true, and if `onpage_menu` is set to true or left unset, then this page's navigation menu's top level links will be the links to this page's modules. Otherwise the menu's top level links will be to the top-level pages of the site.
+- `modules_in_menu`: If set to true, each of the modular page's modules will appear in the navigation menu as children of the page. (Note that on the modular page itself, the modules may appear as top-level menu items depending on how `single_page_menu` is set.)
+- `single_page_menu`: If set to true, each of the modular page's modules will appear in the page's navigation menu as top-level items, and sibling or parent pages of the modular page will not appear in the modular page's menu.
+- `onpage_menu` (**DEPRECATED**): Same behavior as `single_page_menu`. *If either `modules_in_menu` or `single_page_menu` is set, this setting will be ignored.*
 
 ### Advanced
 

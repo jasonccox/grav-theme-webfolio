@@ -1,3 +1,9 @@
+# v1.1.1
+##  08/30/2019
+
+1. [](#fixed)
+    * Preserve backwards compatibility of `onpage_menu` header value of modular pages if it was set.
+
 # v1.1.0
 ##  08/30/2019
 

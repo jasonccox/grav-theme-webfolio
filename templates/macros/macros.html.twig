@@ -16,7 +16,7 @@
         {% endif %}
         <a class="{{ active_page }} {{ internal }}" href="{{ href }}">{{ p.menu }}</a>
 
-        {% set show_modules = p.header.onpage_menu is not same as(false) and p.collection.modular.count > 0 %}
+        {% set show_modules = p.header.modules_in_menu and p.collection.modular.count > 0 %}
         {% set show_children = p.children.visible.count > 0 %}
 
         {% if not nested and (show_modules or show_children) %}

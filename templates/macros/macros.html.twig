@@ -1,0 +1,39 @@
+{% macro pageLinkName(text) %}{{ text|lower|replace({' ':'_'}) }}{% endmacro %}
+
+{% macro nav_loop(pages, modular, nested) %}
+  {% import _self as macros %}
+  {% for p in pages %}
+    {% if p.header.visible is not same as(false) %}
+      {% set active_page = (p.active or p.activeChild) ? 'active' : '' %}
+      <li>
+        {% set href = '' %}
+        {% set internal = '' %}
+        {% if modular %}
+          {% set internal = p.parent.active ? 'internal' : '' %}
+          {% set href = p.parent.url ~ '#' ~ macros.pageLinkName(p.menu) %}
+        {% else %}
+          {% set href = p.url %}
+        {% endif %}
+        <a class="{{ active_page }} {{ internal }}" href="{{ href }}">{{ p.menu }}</a>
+
+        {% set show_modules = p.header.onpage_menu is not same as(false) and p.collection.modular.count > 0 %}
+        {% set show_children = p.children.visible.count > 0 %}
+
+        {% if not nested and (show_modules or show_children) %}
+          <i class="nav__dropdown-icon fas fa-chevron-down"></i>
+        {% endif %}
+
+        {% if show_modules %}
+          <ul>
+          {{ macros.nav_loop(p.collection.modular, true, true) }}
+          </ul>
+        {% endif %}
+        {% if show_children %}
+          <ul>
+          {{ macros.nav_loop(p.children.visible, false, true) }}
+          </ul>
+        {% endif %}
+      </li>
+    {% endif %}
+  {% endfor %}
+{% endmacro %}

@@ -1,10 +1,9 @@
 {% extends 'partials/base.html.twig' %}
 
-{% macro pageLinkName(text) %}{{ text|lower|replace({' ':'_'}) }}{% endmacro %}
+{% import 'macros/macros.html.twig' as macros %}
 
-{% import _self as macro %}
-
-{% set show_onpage_menu = header.onpage_menu == true or header.onpage_menu is null %}
+{% set show_onpage_menu = header.onpage_menu == true or header.onpage_menu is null or header.single_page_menu %}
+{% set single_page_menu = show_onpage_menu and header.single_page_menu %}
 
 {% block javascripts %}
     {% if show_onpage_menu %}
@@ -20,8 +19,8 @@
         // singlePageNav initialization & configuration
         $('ul.navigation').singlePageNav({
             offset: $('#header').outerHeight(),
-            filter: ':not(.external)',
-            updateHash: true,
+            filter: '.internal',
+            updateHash: false,
             currentClass: 'active'
         });
         </script>
@@ -29,50 +28,28 @@
 {% endblock %}
 
 {% block header_navigation %}
-    {% if show_onpage_menu %}
+    {% if single_page_menu %}
         <ul class="navigation">
-        {% for module in page.collection() if module.header.visible is not same as(false) %}
-            {% set current_module = (module.active or module.activeChild) ? 'active' : '' %}
-            <li><a class="{{ current_module }}" href="#{{ macro.pageLinkName(module.menu) }}">{{ module.menu }}</a></li>
-        {% endfor %}
-        {% for mitem in site.menu %}
-            <li>
-                <a {% if mitem.class %}class="{{ mitem.class }}"{% endif %} href="{{ mitem.url }}">
-                    {% if mitem.icon %}<i class="fa fa-{{ mitem.icon }}"></i>{% endif %}
-                    {{ mitem.text }}
-                </a>
-            </li>
-        {% endfor %}
+            {{ macros.nav_loop(page.collection.modular, true, false) }}
         </ul>
     {% else %}
-        {{  parent() }}
+    {{ parent() }}
+    {% endif %}
+{% endblock %}
+
+{% block header_navigation_mobile %}
+    {% if single_page_menu %}
+        <ul class="navigation">
+            {{ macros.nav_loop(page.collection.modular, true, false) }}
+        </ul>
+    {% else %}
+    {{ parent() }}
     {% endif %}
 {% endblock %}
 
 {% block content %}
     {% for module in page.collection() %}
-        <div id="{{ macro.pageLinkName(module.menu) }}"></div>
+        <div id="{{ macros.pageLinkName(module.menu) }}"></div>
         {{ module.content|raw }}
     {% endfor %}
-{% endblock %}
-
-{% block header_navigation_mobile %}
-    {% if show_onpage_menu %}
-        <ul class="navigation">
-        {% for module in page.collection() if module.header.visible is not same as(false) %}
-            {% set current_module = (module.active or module.activeChild) ? 'active' : '' %}
-            <li><a class="{{ current_module }}" href="#{{ macro.pageLinkName(module.menu) }}">{{ module.menu }}</a></li>
-        {% endfor %}
-        {% for mitem in site.menu %}
-            <li>
-                <a {% if mitem.class %}class="{{ mitem.class }}"{% endif %} href="{{ mitem.url }}">
-                    {% if mitem.icon %}<i class="fa fa-{{ mitem.icon }}"></i>{% endif %}
-                    {{ mitem.text }}
-                </a>
-            </li>
-        {% endfor %}
-        </ul>
-    {% else %}
-        {{  parent() }}
-    {% endif %}
 {% endblock %}

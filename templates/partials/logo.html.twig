@@ -2,7 +2,10 @@
 
 {% set logo_img = "" %}
 {% if logo %}
-  {% set logo_img = media['theme://images/' ~ (logo|first).name] %}
+  {% set logo_img = media['image://webfolio/' ~ (logo|first).name] %}
+  {% if not logo_img %}
+    {% set logo_img = media['theme://images/' ~ (logo|first).name] %}
+  {% endif %}
 {% else %}
   {% set logo_img = media['theme://images/grav-logo.svg'] %}
 {% endif %}

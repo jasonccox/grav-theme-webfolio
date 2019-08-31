@@ -20,6 +20,8 @@ Alternatively, you can install Webfolio via the Grav Admin interface.
 
 ## Customization
 
+### Site-wide
+
 The following customizations are available by editing `user/config/themes/webfolio.yaml` (see the [repo for my personal site](https://gitlab.com/jasonccox/personal-site) for an example file) or via the Grav Admin interface.
 
 - **Custom Logo** (`custom_logo`) - A logo image to be placed on the left side of the header throughout the site.
@@ -30,6 +32,12 @@ The following customizations are available by editing `user/config/themes/webfol
   - **Year** (`copyright.year`) - The year to be displayed next to the copyright symbol.
   - **Copyright-Holder's Name** (`copyright.name`) - The name of the person holding the copyright for the site.
   - **Link Target URL** (`copyright.link`) - A URL to which users will be directed when clicking on the copyright-holder's name.
+
+### Page Specific
+
+Modular pages can have a bit of extra customiztion with regard to their navigation menu. Within the header of the `modular.md`, the following properties are available:
+- `onpage_menu`: If set to true or left unset, then a link will be added to the navigation menu for each module of the modular page.
+- `single_page_menu`: If set to true, and if `onpage_menu` is set to true or left unset, then this page's navigation menu's top level links will be the links to this page's modules. Otherwise the menu's top level links will be to the top-level pages of the site.
 
 ### Advanced
 

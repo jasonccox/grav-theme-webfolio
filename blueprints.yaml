@@ -1,5 +1,5 @@
 name: Webfolio
-version: 1.0.0
+version: 1.1.0
 description: A simple theme for creating an online portfolio
 icon: globe
 author:
@@ -22,7 +22,7 @@ form:
       type: file
       label: Custom Logo
       size: large
-      destination: 'theme://images'
+      destination: 'image://webfolio'
       multiple: false
       markdown: true
       description: Will be used instead of default logo `theme://images/grav-logo.svg`
@@ -33,7 +33,7 @@ form:
       type: file
       label: Mobile Custom Logo
       size: large
-      destination: 'theme://images'
+      destination: 'image://webfolio'
       multiple: false
       description: Will be used on the overlay for the mobile navigation menu
       accept:
@@ -43,7 +43,7 @@ form:
       type: file
       label: Favicon
       size: large
-      destination: 'theme://images'
+      destination: 'image://webfolio'
       multiple: false
       markdown: true
       description: Must be a .png file

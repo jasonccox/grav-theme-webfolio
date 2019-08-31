@@ -30,6 +30,21 @@ body {
 	}
 }
 
+#body {
+	margin-top: 5rem;
+	transition: margin 0.5s;
+
+	.scrolled & {
+		margin-top: 3rem;
+	}
+}
+
+.container {
+	max-width: $screen-l;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .bg-alt {
 	background-color: $color-bg-alt;
 }

@@ -10,7 +10,11 @@
     {% include 'partials/metadata.html.twig' %}
 
     {% if config.theme.favicon %}
-        <link rel="icon" type="image/png" href="{{ url('theme://images/' ~ (config.theme.favicon|first).name) }}" />
+        {% set favicon_img = media['image://webfolio/' ~ (config.theme.favicon|first).name] %}
+        {% if not favicon_img %}
+            {% set favicon_img = media['theme://images/' ~ (config.theme.favicon|first).name] %}
+        {% endif %}
+        <link rel="icon" type="image/png" href="{{ favicon_img.url }}" />
     {% endif %}
     <link rel="canonical" href="{{ page.url(true, true) }}" />
 {% endblock head%}
@@ -40,8 +44,10 @@
                 {% include 'partials/logo.html.twig' %}
             </div>
             
-            <nav class="nav--main">
-            {% block header_navigation %}{% endblock %}
+            <nav class="nav--main__nav">
+            {% block header_navigation %}
+                {% include 'partials/nav.html.twig' %}
+            {% endblock %}
             </nav>
         </div>
     </header>
@@ -85,7 +91,9 @@
         {% include 'partials/logo.html.twig' with {mobile: true} %}
     </div>
     <nav class="nav--mobile__nav">
-        {% block header_navigation_mobile %}{% endblock %}
+        {% block header_navigation_mobile %}
+            {% include 'partials/nav.html.twig' %}
+        {% endblock %}
     </nav>
 </div>
 

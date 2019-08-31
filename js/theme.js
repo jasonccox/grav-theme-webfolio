@@ -14,6 +14,17 @@ function parallaxBackground() {
     $('.parallax').css('background-positionY', ($(window).scrollTop() * 0.3) + 'px');
 }
 
+function toggleMenuExpanded(li) {
+    var icon = li.find("i.nav__dropdown-icon");
+    icon.toggleClass('fa-chevron-up');
+    icon.toggleClass('fa-chevron-down');
+    li.toggleClass('expanded');
+
+    if (li.hasClass('expanded')) {
+        toggleMenuExpanded($('.navigation .expanded').not(li));
+    }
+}
+
 jQuery(document).ready(function($){
 
     scrollHeader();
@@ -45,4 +56,15 @@ jQuery(document).ready(function($){
         $("body").removeClass("mobile-nav-open"); 
         $("#nav-mobile-toggle").removeClass("active");
     });
+
+    $("i.nav__dropdown-icon").click(function(){
+        toggleMenuExpanded($(this).parent());
+    })
+
+    $('.navigation a').click(function(){
+        var expanded = $('.navigation .expanded');
+        if (expanded.length > 0) {
+            toggleMenuExpanded(expanded);
+        }  
+    })
 });

@@ -32,7 +32,7 @@ ul.navigation {
 			visibility: hidden;
 			opacity: 0;
 			border: 0.03rem darken($color-bg, 10%) solid;
-			border-top: 0.03rem $color-bg solid;
+			border-top: none;
 			height: 0;
 			transition: opacity .35s,visibility .35s,height .35s,padding .35s,top .5s;
 			background-color: $color-bg;
@@ -68,7 +68,18 @@ ul.navigation {
 			padding-bottom: 0.5rem;
 		}
 
-		.nav__dropdown-icon {
+		.nav__dropdown {
+			background: none;
+			padding: 0;
+			color: $color-text;
+			font-size: $font-size-xs;
+
+			&:hover {
+				color: darken($color-text, $darken-hover);
+			}
+		}
+
+		.nav__dropdown__icon {
 			width: 1rem;
 			text-align: right;
 		}

@@ -1,3 +1,5 @@
+{% import 'macros/macros.html.twig' as macros %}
+
 {% set image = page.media.images|first %}
 
 <section class="section modular {{ page.header.class }}">
@@ -10,10 +12,13 @@
             {{ content|raw }}
             
             <div class="intro__links">
+                {% if page.header.use_footer_links %} 
+                    {% for link in config.theme.footer_links %}
+                        {{ macros.icon_link(link.link, link.icon) }}
+                    {% endfor %}
+                {% endif %}
                 {% for link in page.header.links %}
-                    <a href="{{ link.link }}" target="_blank">
-                        <i class="{{ link.icon }}"></i>
-                    </a>
+                    {{ macros.icon_link(link.link, link.icon) }}
                 {% endfor %}
             </div>
         </div>

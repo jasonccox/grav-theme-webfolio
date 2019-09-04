@@ -10,6 +10,8 @@ $color-required: #E85600;
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i&display=swap');
 $font-family-base: 'Open Sans', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
+$font-family-mono: 'Source Code Pro', monospace;
 
 $font-weight-thin: 300;
 $font-weight-normal: 400;

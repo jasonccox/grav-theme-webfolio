@@ -1,3 +1,17 @@
+# v1.2.0
+##  09/04/2019
+
+1. [](#new)
+    * You can now have a blog on your site!
+    * You can now have icon links in the footer and also reuse those links in the intro section.
+    * A default template is now available.
+    * A new utility class (`.center-x`) is available to easily horizontally center elements.
+1. [](#improved)
+    * The README now has better documentation about site customization.
+    * The footer credit text is more concise.
+    * Dropdowns in the navigation menu close when they lose focus.
+    * Code snippets and blockquotes now have better formatting.
+
 # v1.1.1
 ##  08/30/2019
 

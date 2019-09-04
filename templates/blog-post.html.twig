@@ -1,0 +1,26 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+<section class="blog-post">
+    <section class="container">
+        <section class="blog-post__header {{ header.header_classes }}">
+            <h1 class="blog-post__header__title">{{ header.title }}</h1>
+            <div class="blog-post__header__date">
+                {% set created_str = header.created|date(config.system.pages.dateformat.short) %}
+                {% set updated_str = header.updated|date(config.system.pages.dateformat.short) %}
+
+                {% if header.updated and updated_str is not same as(created_str) %}
+                    {{ updated_str }} 
+                    | Originally posted {{ created_str }}
+                {% else %}
+                    {{ created_str }}
+                {% endif %}
+            </div>
+        </section>
+        <hr class="blog-post__divider" >
+        <section class="blog-post__content {{ header.content_classes }}">
+            {{ content|raw }}
+        </section>
+    </section>
+</section>
+{% endblock %}

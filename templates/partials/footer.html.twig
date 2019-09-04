@@ -1,0 +1,31 @@
+{% import 'macros/macros.html.twig' as macros %}
+
+<footer class="footer">
+    {% if config.theme.copyright %}
+        <span class="footer__copyright">
+            &copy; {{ config.theme.copyright.year }} 
+            <a href="{{ config.theme.copyright.link }}" target="_blank">
+                {{ config.theme.copyright.name }} 
+            </a>
+        </span>
+        {% if config.theme.footer_links or config.theme.footer_credit %}
+            |
+        {% endif %}
+    {% endif %}
+    <span class="footer__links">
+    {% if config.theme.footer_links %}
+        {% for link in config.theme.footer_links %}
+            {{ macros.icon_link(link.link, link.icon) }}
+        {% endfor %}
+
+        {% if config.theme.footer_credit %}
+            |
+        {% endif %}
+    {% endif %}
+    </span>
+    {% if config.theme.footer_credit %}
+    <span class="footer__credit">
+        Made with <a href="https://gitlab.com/jasonccox/grav-theme-webfolio" target="_blank">Webfolio</a> on <a href="http://getgrav.org" target="_blank">Grav</a>
+    </span>
+    {% endif %}
+</footer>

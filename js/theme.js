@@ -15,14 +15,10 @@ function parallaxBackground() {
 }
 
 function toggleMenuExpanded(li) {
-    var icon = li.find("i.nav__dropdown-icon");
+    var icon = li.find("i.nav__dropdown__icon");
     icon.toggleClass('fa-chevron-up');
     icon.toggleClass('fa-chevron-down');
     li.toggleClass('expanded');
-
-    if (li.hasClass('expanded')) {
-        toggleMenuExpanded($('.navigation .expanded').not(li));
-    }
 }
 
 jQuery(document).ready(function($){
@@ -57,14 +53,19 @@ jQuery(document).ready(function($){
         $("#nav-mobile-toggle").removeClass("active");
     });
 
-    $("i.nav__dropdown-icon").click(function(){
+    $("button.nav__dropdown").click(function(){
         toggleMenuExpanded($(this).parent());
-    })
+    });
 
-    $('.navigation a').click(function(){
-        var expanded = $('.navigation .expanded');
-        if (expanded.length > 0) {
-            toggleMenuExpanded(expanded);
-        }  
-    })
+    $(".navigation li").focusout(function(){
+        if ($(this).hasClass('expanded')) {
+            toggleMenuExpanded($(this));
+        }
+    });
+
+    $(".navigation a").mousedown(function(event){
+        event.preventDefault(); // so that links register as clicked before the menu is hidden
+    }).click(function(){
+        $(this).focus();
+    });
 });

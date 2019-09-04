@@ -20,7 +20,9 @@
         {% set show_children = p.children.visible.count > 0 %}
 
         {% if not nested and (show_modules or show_children) %}
-          <i class="nav__dropdown-icon fas fa-chevron-down"></i>
+          <button class="nav__dropdown">
+            <i class="nav__dropdown__icon fas fa-chevron-down"></i>
+          </button>
         {% endif %}
 
         {% if show_modules %}
@@ -36,4 +38,10 @@
       </li>
     {% endif %}
   {% endfor %}
+{% endmacro %}
+
+{% macro icon_link(url, icon_classes) %}
+  <a href="{{ url }}" target="_blank">
+      <i class="{{ icon_classes }}"></i>
+  </a>
 {% endmacro %}

@@ -45,10 +45,6 @@ body {
 	margin-right: auto;
 }
 
-.bg-alt {
-	background-color: $color-bg-alt;
-}
-
 a {
 	color: $color-accent;
 	text-decoration: none;
@@ -145,4 +141,35 @@ button {
 
 .required {
 	color: $color-required;
+}
+
+blockquote {
+	background-color: lighten($color-accent, 40%);
+	border-left: 0.5rem solid desaturate($color-accent, 50%);
+	padding: 0.5rem;
+	margin-left: 0.5rem;
+
+	>:first-child {
+		margin-top: 0;
+	}
+  
+	>:last-child {
+		margin-bottom: 0;
+	}
+}
+
+pre {
+	margin: 0 1rem;
+	padding: 0.7rem;
+	border-radius: 0.2rem;
+	background-color: darken($color-bg, 5%);
+	overflow: scroll;
+}
+
+code {
+	background-color: darken($color-bg, 5%);
+	padding: 0.1rem;
+	border-radius: 0.2rem;
+	font-family: $font-family-mono;
+	font-size: $font-size-s - 0.2rem;
 }

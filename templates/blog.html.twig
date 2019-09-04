@@ -1,0 +1,34 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+<section class="blog">
+    <section class="container">
+        {{ content|raw }}
+
+        <section class="blog__cards">
+            {% for child in page.children %}
+                <a class="blog__card__link" href="{{ child.url }}">
+                    <div class="blog__card">
+                        {{ child.media[child.header.image].html('', child.header.title ~ ' image', 'blog__card__img') }}
+                        <div class="blog__card__content {% if not child.media[child.header.image] %} no-img {% endif %}">
+                            <h3 class="blog__card__title">
+                                {{ child.header.title }}
+                            </h3>
+                            <div class="blog__card__date">
+                                {% if child.header.updated %}
+                                    {{ child.header.updated|date(config.system.pages.dateformat.short) }}
+                                {% else %}
+                                    {{ child.header.created|date(config.system.pages.dateformat.short) }}
+                                {% endif %} 
+                            </div>
+                            <div class="blog__card__preview">
+                                {{ child.summary|striptags }}
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            {% endfor %}
+        </section>
+    </section>
+</section>
+{% endblock %}

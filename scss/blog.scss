@@ -78,7 +78,7 @@
 @media only screen and (min-width: $screen-m) {
 	.blog__card {
         width: 100%;
-        height: 20rem;
+        height: 25rem;
     
         flex-direction: row;
     }
@@ -94,6 +94,8 @@
     }
     
     .blog__card__content {
+        max-height: 100%;
+        overflow: hidden;
         flex: 0 0 calc(60% - 3rem);
 
         &.no-img {
@@ -103,5 +105,11 @@
     
     .blog__card__date {
         font-size: $font-size-xxs;
+    }
+}
+
+@media only screen and (min-width: $screen-l) {
+    .blog__card {
+        height: 20rem;
     }
 }

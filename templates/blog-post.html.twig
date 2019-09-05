@@ -6,14 +6,15 @@
         <section class="blog-post__header {{ header.header_classes }}">
             <h1 class="blog-post__header__title">{{ header.title }}</h1>
             <div class="blog-post__header__date">
-                {% set created_str = header.created|date(config.system.pages.dateformat.short) %}
-                {% set updated_str = header.updated|date(config.system.pages.dateformat.short) %}
+                {% set date_format = page.dateformat ? page.dateformat : system.pages.dateformat.short %}
+                {% set published = page.publishDate|date(date_format) %}
+                {% set date = page.date|date(date_format) %}
 
-                {% if header.updated and updated_str is not same as(created_str) %}
-                    {{ updated_str }} 
-                    | Originally posted {{ created_str }}
+                {% if page.header.publish_date and published is not same as(date) %}
+                    {{ date }} 
+                    | Originally published {{ published }}
                 {% else %}
-                    {{ created_str }}
+                    {{ date }}
                 {% endif %}
             </div>
         </section>

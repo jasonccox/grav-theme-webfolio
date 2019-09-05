@@ -15,11 +15,8 @@
                                 {{ child.header.title }}
                             </h3>
                             <div class="blog__card__date">
-                                {% if child.header.updated %}
-                                    {{ child.header.updated|date(config.system.pages.dateformat.short) }}
-                                {% else %}
-                                    {{ child.header.created|date(config.system.pages.dateformat.short) }}
-                                {% endif %} 
+                                {% set date_format = page.dateformat ? page.dateformat : system.pages.dateformat.short %}
+                                {{ child.date|date(date_format) }}
                             </div>
                             <div class="blog__card__preview">
                                 {{ child.summary|striptags }}

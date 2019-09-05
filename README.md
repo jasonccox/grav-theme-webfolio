@@ -77,8 +77,6 @@ The following properties are available to customize the navigation menu:
 
 #### Blog Posts (`blog-post.md`)
 
-- `created` - This is the date and time this blog post was originally created. It should be a [YAML timestamp](https://yaml.org/type/timestamp.html). When displayed, it will be formatted according to `pages.dateformat.short` from the system settings.
-- `updated` - This is the date and time this blog post was last updated. It should be a [YAML timestamp](https://yaml.org/type/timestamp.html). When displayed, it will be formatted according to `pages.dateformat.short` from the system settings.
 - `header_classes` - A space-separated list of CSS classes to be applied to the header section (containing the title and date) of the post.
 - `content_classes` - A space-separated list of CSS classes to be applied to the content section (containing the actual post) of the post.
 

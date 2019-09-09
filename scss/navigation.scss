@@ -102,6 +102,10 @@ ul.navigation {
 		font-size: $font-size-s;
 		margin-top: 1rem;
 
+		.nav__dropdown {
+			display: none;
+		}
+
 		&:first-child {
 			margin-top: 0;
 		}

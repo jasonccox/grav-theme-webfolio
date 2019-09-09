@@ -163,7 +163,11 @@ pre {
 	padding: 0.7rem;
 	border-radius: 0.2rem;
 	background-color: darken($color-bg, 5%);
-	overflow: scroll;
+	overflow: auto;
+
+	code {
+		padding: 0;
+	}
 }
 
 code {

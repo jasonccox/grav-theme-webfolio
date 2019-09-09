@@ -116,56 +116,6 @@ h6 {
 	}
 }
 
-@media only screen and (max-width: $screen-s) {
-	h1 {
-			font-size: $font-size-xl;
-	
-			code {
-					font-size: $font-size-xl - 0.5rem;
-			}
-	}
-	
-	h2 {
-			font-size: $font-size-l;
-	
-			code {
-					font-size: $font-size-l - 0.375rem;
-			}
-	}
-	
-	h3 {
-			font-size: $font-size-m;
-	
-			code {
-					font-size: $font-size-m - 0.25rem;
-			}
-	}
-
-	h4 {
-			font-size: $font-size-s;
-	
-			code {
-					font-size: $font-size-s - 0.2rem;
-			}
-	}
-	
-	h5 {
-			font-size: $font-size-s;
-	
-			code {
-					font-size: $font-size-s - 0.2rem;
-			}
-	}
-	
-	h6 {
-			font-size: $font-size-s;
-	
-			code {
-					font-size: $font-size-s - 0.2rem;
-			}
-	}
-}
-
 input, textarea, button {
 	font-family: $font-family-base;
 	font-size: $font-size-s;

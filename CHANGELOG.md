@@ -11,6 +11,7 @@
     * The footer credit text is more concise.
     * Dropdowns in the navigation menu close when they lose focus.
     * Code snippets and blockquotes now have better formatting.
+    * Large fonts (e.g., headings) are now a bit smaller by default.
 
 # v1.1.1
 ##  08/30/2019

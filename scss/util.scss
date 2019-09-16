@@ -1,9 +1,120 @@
+// I don't recommend that you modify any of this values. Rather,
+// change the variable values in variables.scss.
+
+// background colors
+
+.bg-bg {
+    background-color: $color-bg;
+}
+
 .bg-alt {
 	background-color: $color-bg-alt;
 }
+
+// text colors
+
+.color-bg {
+    color: $color-bg;
+}
+
+.color-bg-alt {
+    color: $color-bg-alt;
+}
+
+.color-text {
+    color: $color-text;
+}
+
+.color-text-light {
+    color: $color-text-light;
+}
+
+.color-text-dark {
+    color: $color-text-dark;
+}
+
+.color-accent {
+    color: $color-accent;
+}
+
+.color-required {
+    color: $color-bg;
+}
+
+// font sizes
+
+.font-size-xxs {
+    font-size: $font-size-xxs;
+}
+
+.font-size-xs {
+    font-size: $font-size-xs;
+}
+
+.font-size-s {
+    font-size: $font-size-s;
+}
+
+.font-size-m {
+    font-size: $font-size-m;
+}
+
+.font-size-xl {
+    font-size: $font-size-xl;
+}
+
+.font-size-xl {
+    font-size: $font-size-xl;
+}
+
+.font-size-xxl {
+    font-size: $font-size-xxs;
+}
+
+// other
 
 .center-x {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+// css variables
+
+:root {
+    // colors
+    --color-bg: $color-bg;
+    --color-bg-alt: $color-bg-alt;
+    --color-text: $color-text;
+    --color-text-light: $color-text-light;
+    --color-text-dark: $color-text-dark;
+    --color-accet: $color-accent;
+    --color-required: $color-required;
+
+    // font families
+    --font-family-base: $font-family-base;
+    --font-family-mono: $font-family-mono;
+
+    // font weights
+    --font-weight-thin: $font-weight-thin;
+    --font-weight-normal: $font-weight-normal;
+    --font-weight-bold: $font-weight-bold;
+
+    // font sizes
+    --font-size-xxs: $font-size-xxs;
+    --font-size-xs: $font-size-xs;
+    --font-size-s: $font-size-s;
+    --font-size-m: $font-size-m;
+    --font-size-l: $font-size-l;
+    --font-size-xl: $font-size-xl;
+    --font-size-xxl: $font-size-xxl;
+
+    // screen sizes
+    --screen-xxs: $screen-xxs;
+    --screen-xs: $screen-xs;
+    --screen-s: $screen-s;
+    --screen-m: $screen-m;
+    --screen-l: $screen-l;
+    --screen-xl: $screen-xl;
+    --screen-xxl: $screen-xxl;
 }

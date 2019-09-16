@@ -197,8 +197,8 @@ pre {
 
 code {
 	background-color: darken($color-bg, 5%);
-	padding: 0.1rem;
+	padding: 0 0.1rem;
 	border-radius: 0.2rem;
 	font-family: $font-family-mono;
-	font-size: $font-size-s - 0.2rem;
+	font-size: $font-size-s * 0.8;
 }

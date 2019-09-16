@@ -6,7 +6,7 @@
         {{ content|raw }}
 
         <section class="blog__cards">
-            {% for child in page.children %}
+            {% for child in page.children.published %}
                 <a class="blog__card__link" href="{{ child.url }}">
                     <div class="blog__card">
                         {{ child.media[child.header.image].html('', child.header.title ~ ' image', 'blog__card__img') }}

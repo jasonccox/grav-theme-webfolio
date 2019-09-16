@@ -1,3 +1,9 @@
+# v1.2.2
+##  09/16/2019
+
+1. [](#bugfix)
+    * Unpublished posts are no longer visible on the blog page.
+
 # v1.2.1
 ##  09/16/2019
 

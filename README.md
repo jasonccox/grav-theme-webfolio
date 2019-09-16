@@ -1,6 +1,6 @@
 # Webfolio Theme
 
-The **Webfolio** Theme is a basic theme for creating an online portfolio with [Grav CMS](http://github.com/getgrav/grav). It is partially based on the [Quark Theme](https://github.com/getgrav/grav-theme-quark).
+The **Webfolio** Theme is a basic theme for creating an online portfolio and blog with [Grav CMS](http://github.com/getgrav/grav). It is partially based on the [Quark Theme](https://github.com/getgrav/grav-theme-quark).
 
 ## Sample
 
@@ -17,6 +17,66 @@ My own personal website uses this theme. Feel free to [check it out](https://jas
 	```
 
 Alternatively, you can install Webfolio via the Grav Admin interface.
+
+## Templates
+
+Webfolio offers several templates for your site's pages. Here's a brief overview of each one.
+
+### Default
+
+The `default` template is a simple template that just renders your content as-is.
+
+### Modular
+
+The `modular` template is used to create modular pages made up of several sub-pages. The actual `modular.md` file typically only contains YAML FrontMatter; any Markdown content will not be rendered.
+
+#### Intro
+
+The `intro` template is used to create an introduction section within a modular page. It can display an image and icon links in addition to the Markdown content. The first image file within this page's directory, if there is one, will be used as the image.
+
+**Custom FrontMatter Fields**
+- `use_footer_links` - Whether the `footer_links` from the site-wide customization should also appear in this section. See the *Customization* section below for more information about `footer_links`.
+- `links` - A list of icon links to be displayed. Each link needs to specify a `link` (the URL to which it points) and an `icon` (Font-Awesome CSS classes, such as `fas fa-code`). These links will be displayed after the `footer_links` if `use_footer_links` is true.
+- `img_alt` - The alt text to be used for the image in this section.
+
+#### About
+
+The `about` template is used to display a section containing some Markdown content and a few details.
+
+**Custom FrontMatter Fields**
+- `details` - A list of details to be shown in this section. Each detail can have a `title`, `icon` (Font Awesome CSS classes, such as `fas fa-code`), and `content`. Three details looks the best on the page.
+
+#### Projects
+
+The `projects` template shows a section containing a grid of project tiles.
+
+**Custom FrontMatter Fields**
+- `projects` - A list of projects to be shown in this section. Each project can have a `title`, `image` (name of an image file stored in the page's directory), `description`, and `link` (URL).
+
+#### Contact
+
+The `contact` template is used to create a section containing a contact form, a contact button, or both. Note that the contact form should be set up in the header of the `modular.md` file as indicated [here](https://learn.getgrav.org/16/forms/forms/how-to-forms-in-modular-pages).
+
+**Custom FrontMatter Fields**
+- `button` - If this field is present, a button will appear in this section with the following properties:
+    - `link` - The URL that the button will load when clicked.
+    - `text` - The text to be displayed on the button.
+    - `icon` - Font Awesome CSS classes, such as `fas fa-envelope`.
+- `show_form` - Whether or not the contact form should be shown in this section.
+
+#### Plain
+
+The `plain` template is like the `default` template, but for creating a section in a modular page.
+
+### Blog
+
+The `blog` template displays a list of blog posts (organized as sub-pages of the blog page).
+
+### Blog Post
+
+The `blog-post` template is used to render a blog post. You'll want to set the `title` and `date` FrontMatter fields.
+
+> If both `publish_date` and `date` are set, `publish_date` is interpreted as the date of original publication, while `date` is the date the post was last updated.
 
 ## Customization
 
@@ -53,36 +113,15 @@ The following properties are available to customize the navigation menu:
 
 - `class` - A space-separated list of CSS classes to be applied to the modular section.
 
-#### Intro (`intro.md`)
-
-- `use_footer_links` - Whether the `footer_links` from the site-wide customization should also appear in this section.
-- `links` - Additional links, with the same format as `footer_links` to be displayed in this section. These links will be displayed after the `footer_links` if `use_footer_links` is true.
-- `img_alt` - The alt text to be used for the image in this section.
-
-#### About (`about.md`)
-
-- `details` - A list of details to be shown in this section. Each detail can have a `title`, `icon` (Font Awesome icon classes, such as `fas fa-code`), and `content`. Three details looks the best on the page.
-
-#### Projects (`projects.md`)
-
-- `projects` - A list of projects to be shown in this section. Each project can have a `title`, `image` (name of an image file stored in the same folder as `about.md`), `description`, and `link` (URL).
-
-#### Contact (`contact.md`)
-
-- `button` - If this field is present, a button will appear in this section with the following properties:
-    - `link` - The URL that the button will load when clicked.
-    - `text` - The text to be displayed on the button.
-    - `icon` - Font Awesome icon classes, such as `fas fa-envelope`.
-- `show_form` - Whether or not the contact form (set up in the header of the `modular.md` file) should be shown in this section.
-
-#### Blog Posts (`blog-post.md`)
-
-- `header_classes` - A space-separated list of CSS classes to be applied to the header section (containing the title and date) of the post.
-- `content_classes` - A space-separated list of CSS classes to be applied to the content section (containing the actual post) of the post.
-
 ### Advanced
 
 More stylistic elements of the site (e.g., colors, fonts, etc.) can be customized using the `css/custom.css` file within the theme. Alternatively, you can edit `scss/variables.scss` and then recompile `scss/theme.scss` into `css-compiled/theme.min.scss` using Sass.
+
+> Webfolio provides several CSS classes and variables for you to use. Take a look inside `scss/util.scss` to see what they are.
+
+## Help
+
+Don't hesitate to reach out to me at [contact@jasoncarloscox.com](mailto:contact@jasoncarloscox.com) if you're having trouble using Webfolio. I'm happy to help!
 
 ## Contributing
 

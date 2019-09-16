@@ -1,3 +1,9 @@
+# v1.2.1
+##  09/16/2019
+
+1. [](#bugfix)
+    * The summary is no longer displayed at the top of blog posts.
+
 # v1.2.0
 ##  09/16/2019
 

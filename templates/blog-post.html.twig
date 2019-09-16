@@ -20,7 +20,11 @@
         </section>
         <hr class="blog-post__divider" >
         <section class="blog-post__content {{ header.content_classes }}">
-            {{ content|raw }}
+            {% set content_no_summary = content %}
+            {% if '===' in page.rawMarkdown %}
+                {% set content_no_summary = content|slice(page.summary|length) %}
+            {% endif %}
+            {{ content_no_summary|raw }}
         </section>
     </section>
 </section>

@@ -1,4 +1,5 @@
 {% extends 'partials/base.html.twig' %}
+{% set posts = page.header.content ? page.collection : page.children %}
 
 {% block content %}
 <section class="blog">
@@ -6,20 +7,20 @@
         {{ content|raw }}
 
         <section class="blog__cards">
-            {% for child in page.children.published %}
-                <a class="blog__card__link" href="{{ child.url }}">
+            {% for post in posts.published %}
+                <a class="blog__card__link" href="{{ post.url }}">
                     <div class="blog__card">
-                        {{ child.media[child.header.image].html('', child.header.title ~ ' image', 'blog__card__img') }}
-                        <div class="blog__card__content {% if not child.media[child.header.image] %} no-img {% endif %}">
+                        {{ post.media[post.header.image].html('', post.header.title ~ ' image', 'blog__card__img') }}
+                        <div class="blog__card__content {% if not post.media[post.header.image] %} no-img {% endif %}">
                             <h3 class="blog__card__title">
-                                {{ child.header.title }}
+                                {{ post.header.title }}
                             </h3>
                             <div class="blog__card__date">
                                 {% set date_format = page.dateformat ? page.dateformat : system.pages.dateformat.short %}
-                                {{ child.date|date(date_format) }}
+                                {{ post.date|date(date_format) }}
                             </div>
                             <div class="blog__card__preview">
-                                {{ child.summary|striptags }}
+                                {{ post.summary|striptags }}
                             </div>
                         </div>
                     </div>

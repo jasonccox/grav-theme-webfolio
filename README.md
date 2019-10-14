@@ -72,6 +72,8 @@ The `plain` template is like the `default` template, but for creating a section 
 
 The `blog` template displays a list of blog posts (organized as sub-pages of the blog page).
 
+> You can define which posts to display on the blog page by defining a [page collection](https://learn.getgrav.org/16/content/collections) using the `content` FrontMatter field. If no `content` field is defined, the blog page's children are displayed.
+
 ### Blog Post
 
 The `blog-post` template is used to render a blog post. You'll want to set the `title` and `date` FrontMatter fields.

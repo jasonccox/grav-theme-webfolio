@@ -15,7 +15,7 @@ form:
               highlight: 1
               help: This will let the section use the links defined in the footer section
               options:
-                1: true
-                0: false
+                1: YES
+                0: NO
               validate:
                 type: bool

@@ -6,6 +6,7 @@
     width: 100%;
     box-shadow: 0.1rem 0.1rem 0.3rem;
     transition: box-shadow $transition-time-hover;
+    color: $color-bg-alt;
 
     display: flex;
     flex-direction: column;
@@ -14,7 +15,8 @@
     align-content: stretch;
     
     &:hover {
-		box-shadow: 0.2rem 0.2rem 0.6rem;
+        box-shadow: 0.2rem 0.2rem 0.6rem;
+        color: $color-bg;
     }
 }
 

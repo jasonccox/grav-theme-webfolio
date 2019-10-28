@@ -135,7 +135,7 @@ input, textarea {
 	}
 
 	&:focus {
-		border-color: $color-accent;
+		border-color: $color-accent2;
 	}
 }
 
@@ -146,7 +146,7 @@ button {
 	padding: 0.5rem;
 
 	&:hover {
-		background-color: darken($color-accent, $darken-hover);
+		background-color: darken($color-accent2, $darken-hover);
 	}
 
 	.bg-alt & {
@@ -168,7 +168,7 @@ button {
 }
 
 blockquote {
-	background-color: darken(desaturate($color-accent, 70%), 50%);
+	background-color: darken(desaturate($color-accent2, 50%), 40%);
 	border-left: 0.5rem solid $color-accent;
 	padding: 0.5rem;
 	margin-left: 0.5rem;

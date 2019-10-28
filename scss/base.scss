@@ -168,7 +168,7 @@ button {
 }
 
 blockquote {
-	background-color: lighten($color-accent, 40%);
+	background-color: darken($color-accent, 40%);
 	border-left: 0.5rem solid desaturate($color-accent, 50%);
 	padding: 0.5rem;
 	margin-left: 0.5rem;

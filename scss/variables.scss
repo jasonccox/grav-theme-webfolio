@@ -1,11 +1,11 @@
 // Colors
-$color-bg: #ffffff;
+$color-bg: #1b1b1b;
 $color-bg-alt: darken($color-bg, 2%);
-$color-text: #444444;
+$color-text: #fefeff;
 $color-text-light: lighten($color-text, 15%);
 $color-text-dark: darken($color-text, 15%);
-$color-accent: #3085EE;
-$color-required: #E85600;
+$color-accent: rgb(0, 132, 255);
+$color-required: rgb(255, 0, 55);
 
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i&display=swap');

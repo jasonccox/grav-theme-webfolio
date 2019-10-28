@@ -1,10 +1,10 @@
 // Colors
 $color-bg: #1b1b1b;
-$color-bg-alt: darken($color-bg, 2%);
+$color-bg-alt: lighten($color-bg, 2%);
 $color-text: #fefeff;
-$color-text-light: lighten($color-text, 15%);
-$color-text-dark: darken($color-text, 15%);
-$color-accent: rgb(0, 132, 255);
+$color-text-light: darken($color-text, 15%);
+$color-text-dark: lighten($color-text, 15%);
+$color-accent: rgb(94, 26, 221);
 $color-required: rgb(255, 0, 55);
 
 // Fonts

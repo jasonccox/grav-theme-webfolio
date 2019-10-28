@@ -50,7 +50,7 @@ a {
 	text-decoration: none;
 
 	&:hover {
-		color: darken($color-accent2, $darken-hover)
+		color: $color-accent2
 	}
 }
 

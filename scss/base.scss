@@ -7,8 +7,8 @@
 }
 
 ::selection {
-	color: $color-accent2;
-	background: darken($color-accent, 15%);
+	color: $color-accent;
+	background: darken($color-accent2, 0%);
   }
 
 body {

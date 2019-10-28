@@ -1,0 +1,20 @@
+title: Features
+'@extends': default 
+
+form:
+  fields:
+    tabs:
+      fields:
+        content:
+          fields:
+            header.use_footer_links:
+              type: toggle
+              label: Use footer links in section
+              help: When enabled, Webfolio will add links from the footer section to this intro.
+              highlight: 1
+              default: 1
+              options:
+                1: On
+                0: Off
+              validate:
+                type: bool

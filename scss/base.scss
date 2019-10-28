@@ -6,6 +6,11 @@
 	transition: color $transition-time-hover, background-color $transition-time-hover;
 }
 
+::selection {
+	color: $color-accent2;
+	background: darken($color-accent, 15%);
+  }
+
 body {
 	background-color: $color-bg;
 	color: $color-text;

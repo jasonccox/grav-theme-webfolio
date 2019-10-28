@@ -4,7 +4,7 @@
 
 .blog__card {
     width: 100%;
-    box-shadow: 0.3rem 0.3rem 1rem;
+    box-shadow: 0.1rem 0.1rem 0.3rem;
     transition: box-shadow $transition-time-hover;
 
     display: flex;
@@ -14,7 +14,7 @@
     align-content: stretch;
     
     &:hover {
-		box-shadow: 0.6rem 0.6rem 1rem;
+		box-shadow: 0.2rem 0.2rem 0.6rem;
     }
 }
 

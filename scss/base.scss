@@ -152,6 +152,7 @@ button {
 
 	&:hover {
 		background-color: darken($color-accent2, $darken-hover);
+		color: lighten($color-accent, 15%);
 	}
 
 	.bg-alt & {
@@ -174,7 +175,7 @@ button {
 
 blockquote {
 	background-color: darken(desaturate($color-accent, 50%), 40%);
-	border-left: 0.5rem solid $color-accent;
+	border-left: 0.5rem solid $color-accent2;
 	padding: 0.5rem;
 	margin-left: 0.5rem;
 	width: calc(100% - 0.5rem);

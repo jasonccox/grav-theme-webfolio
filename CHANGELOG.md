@@ -1,3 +1,9 @@
+# v1.2.4
+##  10/29/2019
+
+1. [Fixed](#bugfix)
+    * The `default` template now renders without an error.
+
 # v1.2.3
 ##  10/14/2019
 

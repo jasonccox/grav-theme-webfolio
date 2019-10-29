@@ -12,11 +12,16 @@
 	max-width: $screen-xs;
 	margin: 2rem auto;
 	text-align: center;
-	box-shadow: 0.3rem 0.3rem 1rem;
-	transition: box-shadow $transition-time-hover;
+	transition: border-radius $transition-time-hover, border-color $transition-time-hover, background-color $transition-time-hover;
+	border-style: solid;
+    border-radius: 20px 50px 20px;
+	border-color: $color-accent2;
+	background-color: desaturate(darken($color-accent2, 35%), 70%);
 
 	&:hover {
-		box-shadow: 0.6rem 0.6rem 1rem;
+		border-color: $color-accent;
+        border-radius: 10px;
+        background-color: desaturate(darken($color-accent, 40%), 70%);
 	}
 
 	a {
@@ -24,7 +29,7 @@
 		color: $color-text;
 
 		&:hover {
-			color: darken($color-text, $darken-hover);
+			color: lighten($color-accent, 15%);
 		}
 	}
 }

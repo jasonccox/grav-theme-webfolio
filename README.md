@@ -30,6 +30,8 @@ The `default` template is a simple template that just renders your content as-is
 
 The `modular` template is used to create modular pages made up of several sub-pages. The actual `modular.md` file typically only contains YAML FrontMatter; any Markdown content will not be rendered.
 
+> The following pages (Intro, About, Projects, Contact, and Plain) all must be created as sub-pages of a page using the modular template. See the Grav documentation on [modular pages](https://learn.getgrav.org/16/content/modular) and [adding modular pages from the admin panel](https://learn.getgrav.org/16/admin-panel/page#add-modular-page) for more information.
+
 #### Intro
 
 The `intro` template is used to create an introduction section within a modular page. It can display an image and icon links in addition to the Markdown content. The first image file within this page's directory, if there is one, will be used as the image.

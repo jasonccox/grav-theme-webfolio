@@ -151,8 +151,8 @@ button {
 	padding: 0.5rem;
 
 	&:hover {
-		background-color: darken($color-accent, $darken-hover);
-		color: lighten($color-accent2, 15%);
+		background-color: darken($color-accent2, $darken-hover);
+		color: lighten($color-accent, 15%);
 	}
 
 	.bg-alt & {

@@ -1,20 +1,25 @@
 .blog {
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
 }
 
 .blog__card {
     width: 100%;
-    box-shadow: 0.1rem 0.1rem 0.3rem;
-    transition: box-shadow $transition-time-hover;
-
+    transition: border-radius $transition-time-hover, border-color $transition-time-hover, background-color $transition-time-hover;
+    border-style: solid;
+    border-radius: 30px 130px 30px;
+    border-color: $color-accent2;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     align-content: stretch;
+    background-color: desaturate(darken($color-accent2, 45%), 70%);
     
     &:hover {
-        box-shadow: 0.2rem 0.2rem 0.6rem;
+        //box-shadow: 0.2rem 0.2rem 0.6rem;
+        border-color: $color-accent;
+        border-radius: 20px;
+        background-color: desaturate(darken($color-accent, 45%), 70%);
     }
 }
 
@@ -24,11 +29,11 @@
     color: unset;
 
     &:hover {
-        color: unset;
+        color: lighten($color-accent, 15%);
     }
 
     &:first-child {
-        margin-top: 3rem;
+        margin-top: 2rem;
     }
 }
 
@@ -40,7 +45,7 @@
 }
 
 .blog__card__content {
-    margin: 1.5rem;
+    margin: 1rem 1rem 3rem 3rem;
 }
 
 .blog__card__date {
@@ -84,7 +89,7 @@
     }
     
     .blog__card__link {
-        margin: 4rem 0;
+        margin: 2rem 0;
     }
     
     .blog__card__img {

@@ -1,0 +1,30 @@
+title: About
+'@extends': default
+
+form:
+  fields:
+    tabs:
+      fields:
+        features:
+          type: tab
+          title: About
+          fields:
+            header.details:
+              name: details
+              type: list
+              label: Details
+              fields:
+                .title:
+                  type: text
+                  label: Title
+                  validate:
+                    type: textarea
+                .icon:
+                  type: iconpicker
+                  label: FA Icon
+                  description: For example, `fas fa-envelope`.
+                .content:
+                  type: text
+                  label: Content
+                  validate:
+                    type: textarea

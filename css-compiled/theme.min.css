@@ -724,10 +724,17 @@ ul.navigation ul {
   align-content: stretch;
   background-color: #313035;
 }
+.blog__card .blog__card__img {
+  border-radius: 30px 130px 0px;
+  transition: border-radius 0.25s;
+}
 .blog__card:hover {
   border-color: #e27b36;
   border-radius: 20px;
   background-color: #282624;
+}
+.blog__card:hover .blog__card__img {
+  border-radius: 20px 0px 0px 20px;
 }
 
 .blog__card__link {

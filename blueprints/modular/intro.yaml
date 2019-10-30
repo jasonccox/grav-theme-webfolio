@@ -21,7 +21,7 @@ form:
                 type: bool
             header.image:
               type: file
-              label: Custom Logo
+              label: Custom Intro Image
               size: large
               destination: 'self@'
               multiple: false

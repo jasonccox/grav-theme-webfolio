@@ -25,11 +25,11 @@
 
 	&:hover {
 		border-color: $color-accent;
-        border-radius: 10px;
+        border-radius: 8px;
 		background-color: desaturate(darken($color-accent, 40%), 70%);
 		
 		.projects__card__img{		
-			border-radius: 10px 10px 0px 50px;
+			border-radius: 8px 8px 0px 0px;
 		}
 	}
 

@@ -610,11 +610,11 @@ ul.navigation ul {
 }
 .projects__card:hover {
   border-color: #e27b36;
-  border-radius: 10px;
+  border-radius: 8px;
   background-color: #282624;
 }
 .projects__card:hover .projects__card__img {
-  border-radius: 10px 10px 0px 50px;
+  border-radius: 8px 8px 0px 0px;
 }
 .projects__card a {
   width: 100%;

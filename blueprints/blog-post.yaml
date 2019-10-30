@@ -1,0 +1,22 @@
+title: Blog Post
+'@extends': default
+
+form:
+  fields:
+    tabs:
+      fields:
+        buttons:
+          type: tab
+          title: Blog Post
+          fields:
+            header.image:
+                  type: filepicker
+                  label: Summary Image
+                  folder: 'self@'
+                  preview_images: true
+                  description: Choose from an image uploaded to the Content section of this page.
+                  accept:
+                    - .jpg
+                    - .png
+                    - .bmp
+                    - .svg

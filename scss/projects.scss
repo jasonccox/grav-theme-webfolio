@@ -18,10 +18,19 @@
 	border-color: $color-accent2;
 	background-color: desaturate(darken($color-accent2, 35%), 70%);
 
+	.projects__card__img{		
+		border-radius: 20px 50px 0px;
+		transition: border-radius $transition-time-hover;
+	}
+
 	&:hover {
 		border-color: $color-accent;
         border-radius: 10px;
-        background-color: desaturate(darken($color-accent, 40%), 70%);
+		background-color: desaturate(darken($color-accent, 40%), 70%);
+		
+		.projects__card__img{		
+			border-radius: 10px 10px 0px 50px;
+		}
 	}
 
 	a {
@@ -53,12 +62,6 @@
 
 .projects__card__img {
 	width: 100%;
-	border-radius: 20px 50px 0px;
-	transition: border-radius $transition-time-hover;
-
-	&:hover {
-        border-radius: 10px 10px 0px 0px;
-	}
 }
 
 .projects__card__txt {

@@ -604,10 +604,17 @@ ul.navigation ul {
   border-color: #5236e2;
   background-color: #313035;
 }
+.projects__card .projects__card__img {
+  border-radius: 20px 50px 0px;
+  transition: border-radius 0.25s;
+}
 .projects__card:hover {
   border-color: #e27b36;
   border-radius: 10px;
   background-color: #282624;
+}
+.projects__card:hover .projects__card__img {
+  border-radius: 10px 10px 0px 50px;
 }
 .projects__card a {
   width: 100%;
@@ -634,11 +641,6 @@ ul.navigation ul {
 }
 .projects__card__img {
   width: 100%;
-  border-radius: 20px 50px 0px;
-  transition: border-radius 0.25s;
-}
-.projects__card__img:hover {
-  border-radius: 10px 10px 0px 0px;
 }
 
 .projects__card__txt {

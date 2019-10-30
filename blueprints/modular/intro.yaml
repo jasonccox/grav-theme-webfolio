@@ -24,7 +24,6 @@ form:
               label: Custom Logo
               size: large
               destination: 'self@'
-              random_name: true
               multiple: false
               markdown: true
               description: First image uploaded will be used for the intro section

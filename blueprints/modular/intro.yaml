@@ -1,0 +1,36 @@
+title: Intro
+'@extends': default
+
+form:
+  fields:
+    tabs:
+      fields:
+        buttons:
+          type: tab
+          title: Intro
+          fields:
+            header.use_footer_links:
+              type: toggle
+              label: Use Footer Links
+              highlight: 1
+              help: This will let the section use the links defined in the footer section
+              options:
+                1: Yes
+                0: No
+              validate:
+                type: bool
+            header.image:
+              type: file
+              label: Custom Intro Image
+              size: large
+              destination: 'self@'
+              multiple: false
+              markdown: true
+              description: First image uploaded will be used for the intro section
+              accept:
+                - image/*
+            header.img_alt:
+              type: text
+              label: Image Caption
+              validate:
+                type: textarea

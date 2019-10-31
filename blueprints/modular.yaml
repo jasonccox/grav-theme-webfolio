@@ -23,7 +23,7 @@ form:
               type: toggle
               label: Display at root level
               highlight: 1
-              description: If this is activated, each child module will be a navigable menu item at root menu level.
+              description: If this is activated, each child module will be a navigable menu item at root menu level (useful for single page websites).
               options:
                 1: Yes
                 0: No

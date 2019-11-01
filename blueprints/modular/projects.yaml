@@ -1,0 +1,42 @@
+title: Projects
+'@extends': default
+
+form:
+  fields:
+    tabs:
+      fields:
+        features:
+          type: tab
+          title: Projects
+          fields:
+            header.projects:
+              name: projects
+              type: list
+              label: Projects
+              fields:
+                .title:
+                  type: text
+                  label: Title
+                  validate:
+                    type: textarea
+                .image:
+                  type: filepicker
+                  label: Image
+                  folder: 'self@'
+                  preview_images: true
+                  description: Choose from an image uploaded to the Content section of this page.
+                  accept:
+                    - .jpg
+                    - .png
+                    - .bmp
+                    - .svg
+                .description:
+                  type: text
+                  label: Description
+                  description: Describe the project in a few words
+                  validate:
+                    type: textarea
+                .link:
+                  type: text
+                  label: Link to project
+

@@ -52,7 +52,7 @@ form:
 
     show_external_links:
       type: toggle
-      label: Show External Links in Navbar
+      label: Show Extra Links in Navbar
       highlight: 0
       default: 0
       options:
@@ -64,7 +64,7 @@ form:
     external_links:
       type: list
       style: horizontal
-      label: External Links
+      label: Extra Links
       fields:
         .text:
           type: text

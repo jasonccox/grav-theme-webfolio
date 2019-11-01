@@ -17,6 +17,8 @@ form:
                   description: Choose from an image uploaded to the Page Media section of the Content tab.
                   accept:
                     - .jpg
+                    - .jpeg
                     - .png
+                    - .gif
                     - .bmp
                     - .svg

@@ -45,3 +45,13 @@
       <i class="{{ icon_classes }}"></i>
   </a>
 {% endmacro %}
+
+{% macro link_loop(show_links, links) %}
+  {% if show_links %}
+    {% for l in links %}
+      <li>        
+        <a href="{{ l.link }}">{{ l.text }}</a>
+      </li>
+    {% endfor %}
+  {% endif %}
+{% endmacro %}

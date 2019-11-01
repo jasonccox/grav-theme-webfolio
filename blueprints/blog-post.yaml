@@ -14,9 +14,11 @@ form:
                   label: Summary Image
                   folder: 'self@'
                   preview_images: true
-                  description: Choose from an image uploaded to the Content section of this page.
+                  description: Choose from an image uploaded to the Page Media section of the Content tab.
                   accept:
                     - .jpg
+                    - .jpeg
                     - .png
+                    - .gif
                     - .bmp
                     - .svg

@@ -92,3 +92,50 @@ form:
           size: large
           label: Link Target URL
           description: The copyright-holder's name will be a link with this target URL
+
+    style:
+        type: fieldset
+        title: Custom Style
+        fields:
+            style.color_bg:
+                type: colorpicker
+                label: Background Color
+            style.color_bg_alt:
+                type: colorpicker
+                label: Alternate Background Color
+            style.color_bg_hover:
+                type: colorpicker
+                label: Background Hover Color
+            style.color_bg_blockquote:
+                type: colorpicker
+                label: Blockquote Background Color
+            style.color_bg_code:
+                type: colorpicker
+                label: Code Background Color
+            style.color_text:
+                type: colorpicker
+                label: Text Color
+            style.color_text_light:
+                type: colorpicker
+                label: Light Text Color
+            style.color_text_dark:
+                type: colorpicker
+                label: Dark Text Color
+            style.color_text_hover:
+                type: colorpicker
+                label: Text Hover Color
+            style.color_accent:
+                type: colorpicker
+                label: Accent Color
+            style.color_accent_hover:
+                type: colorpicker
+                label: Accent Hover Color
+            style.color_required:
+                type: colorpicker
+                label: Required Fields Color
+            style.color_border:
+                type: colorpicker
+                label: Border Color
+            style.color_border_blockquote:
+                type: colorpicker
+                label: Blockquote Border Color

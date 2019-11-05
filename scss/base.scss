@@ -50,7 +50,7 @@ a {
 	text-decoration: none;
 
 	&:hover {
-		color: darken($color-accent, $darken-hover)
+		color: $color-accent-hover;
 	}
 }
 
@@ -125,13 +125,13 @@ input, textarea, button {
 input, textarea {
 	border-radius: 0;
 	border-width: 0.05rem;
-	border-color: darken($color-bg, 20%);
+	border-color: $color-border;
 	border-style: solid;
 	padding: 0.3rem;
 	width: 100%;
 
 	.bg-alt & {
-		border-color: darken($color-bg-alt, 20%);
+		border-color: $color-border;
 	}
 
 	&:focus {
@@ -146,7 +146,7 @@ button {
 	padding: 0.5rem;
 
 	&:hover {
-		background-color: darken($color-accent, $darken-hover);
+		background-color: $color-accent-hover;
 	}
 
 	.bg-alt & {
@@ -168,8 +168,8 @@ button {
 }
 
 blockquote {
-	background-color: lighten($color-accent, 40%);
-	border-left: 0.5rem solid desaturate($color-accent, 50%);
+	background-color: $color-bg-blockquote;
+	border-left: 0.5rem solid $color-border-blockquote;
 	padding: 0.5rem;
 	margin-left: 0.5rem;
 	width: calc(100% - 0.5rem);
@@ -187,7 +187,7 @@ pre {
 	margin: 0 1rem;
 	padding: 0.7rem;
 	border-radius: 0.2rem;
-	background-color: darken($color-bg, 5%);
+	background-color: $color-bg-code;
 	overflow: auto;
 
 	code {
@@ -196,7 +196,7 @@ pre {
 }
 
 code {
-	background-color: darken($color-bg, 5%);
+	background-color: $color-bg-code;
 	padding: 0 0.1rem;
 	border-radius: 0.2rem;
 	font-family: $font-family-mono;

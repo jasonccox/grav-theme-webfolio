@@ -1,16 +1,23 @@
 // Colors
-$color-bg: #ffffff;
-$color-bg-alt: darken($color-bg, 2%);
-$color-text: #444444;
-$color-text-light: lighten($color-text, 15%);
-$color-text-dark: darken($color-text, 15%);
-$color-accent: #3085EE;
-$color-required: #E85600;
+$color-bg: var(--webfolio-color-bg);
+$color-bg-alt: var(--webfolio-color-bg-alt);
+$color-bg-blockquote: var(--webfolio-color-bg-blockquote);
+$color-bg-code: var(--webfolio-color-bg-code);
+$color-bg-hover: var(--webfolio-color-bg-hover);
+$color-text: var(--webfolio-color-text);
+$color-text-light: var(--webfolio-color-text-light);
+$color-text-dark: var(--webfolio-color-text-dark);
+$color-text-hover: var(--webfolio-color-text-hover);
+$color-accent: var(--webfolio-color-accent);
+$color-accent-hover: var(--webfolio-color-accent-hover);
+$color-required: var(--webfolio-color-required);
+$color-border: var(--webfolio-color-border);
+$color-border-blockquote: var(--webfolio-color-border-blockquote);
 
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i&display=swap');
-$font-family-base: 'Open Sans', sans-serif;
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
+$font-family-base: 'Open Sans', sans-serif;
 $font-family-mono: 'Source Code Pro', monospace;
 
 $font-weight-thin: 300;
@@ -37,4 +44,3 @@ $screen-xxl: 1400px;
 
 // Misc
 $transition-time-hover: 0.25s;
-$darken-hover: 15%;

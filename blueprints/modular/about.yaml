@@ -18,14 +18,10 @@ form:
                 .title:
                   type: text
                   label: Title
-                  validate:
-                    type: textarea
                 .icon:
-                  type: iconpicker
+                  type: text
                   label: FontAwesome Icon Classes
                   description: For example, `fas fa-envelope`.
                 .content:
                   type: textarea
                   label: Content
-                  validate:
-                    type: textarea

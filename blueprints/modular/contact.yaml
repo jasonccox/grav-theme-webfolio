@@ -27,12 +27,12 @@ form:
                 header.button.link:
                   type: text
                   label: Link
-                  description: For Example 'mailto:youremail@here.com'
+                  description: For example 'mailto:youremail@here.com'
                 header.button.text:
                   type: text
                   label: Button Text
                 header.button.icon:
-                  type: iconpicker
-                  label: FA Icon
+                  type: text
+                  label: FontAwesome Icon Classes
                   description: For example, `fas fa-envelope`.
                 

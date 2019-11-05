@@ -13,7 +13,7 @@ form:
               type: toggle
               label: Submenu for modules
               highlight: 1
-              description: If this is activated, each child module will be a navigable submenu item under the parent page in the navbar.
+              description: If activated, each child module will be a navigable sub-menu item under the parent page in the navigation bar.
               options:
                 1: Yes
                 0: No

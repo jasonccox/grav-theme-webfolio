@@ -24,7 +24,7 @@ form:
                   label: Image
                   folder: 'self@'
                   preview_images: true
-                  description: Choose from an image uploaded to the Content section of this page.
+                  description: Choose from an image uploaded to the Page Media section of the Content tab.
                   accept:
                     - .jpg
                     - .png
@@ -33,10 +33,7 @@ form:
                 .description:
                   type: text
                   label: Description
-                  description: Describe the project in a few words
-                  validate:
-                    type: textarea
                 .link:
                   type: text
-                  label: Link to project
+                  label: Link to Project
 

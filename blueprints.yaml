@@ -52,7 +52,7 @@ form:
 
     show_external_links:
       type: toggle
-      label: Show Extra Links in Navbar
+      label: Show Extra Links in Navigation Menu
       highlight: 0
       default: 0
       options:

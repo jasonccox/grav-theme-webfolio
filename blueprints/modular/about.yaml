@@ -21,7 +21,7 @@ form:
                     type: textarea
                 .icon:
                   type: iconpicker
-                  label: FA Icon
+                  label: FontAwesome Icon Classes
                   description: For example, `fas fa-envelope`.
                 .content:
                   type: text

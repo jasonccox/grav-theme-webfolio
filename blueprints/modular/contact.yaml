@@ -13,7 +13,7 @@ form:
               type: toggle
               label: Show Contact Form
               highlight: 1
-              help: This will select whether to show the form defined in the form par
+              description: The form must be defined on the parent modular page.
               options:
                 1: Yes
                 0: No

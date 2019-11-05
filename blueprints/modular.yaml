@@ -9,21 +9,23 @@ form:
           type: tab
           title: Modular
           fields:
+
             header.modules_in_menu:
               type: toggle
-              label: Submenu for modules
+              label: Show Modules in Navigation Menu
               highlight: 1
-              description: If this is activated, each child module will be a navigable submenu item under the parent page in the navbar.
+              description: If activated, each child module will be a navigable sub-menu item under the parent page in the navigation bar.
               options:
                 1: Yes
                 0: No
               validate:
                 type: bool
+                
             header.single_page_menu:
               type: toggle
-              label: Display at root level
+              label: Show Single-Page Menu
               highlight: 1
-              description: If this is activated, each child module will be a navigable menu item at root menu level (useful for single page websites).
+              description: If activated, each child module will be a top-level navigable menu item, and no other links will be shown in the navigation menu.
               options:
                 1: Yes
                 0: No

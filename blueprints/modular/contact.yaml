@@ -9,31 +9,33 @@ form:
           type: tab
           title: Contact
           fields:
+
             header.show_form:
               type: toggle
               label: Show Contact Form
               highlight: 1
-              help: This will select whether to show the form defined in the form par
+              description: The form must be defined on the parent modular page.
               options:
                 1: Yes
                 0: No
               validate:
                 type: bool
-
             
             header.button:
               type: section
               title: Contact Button
               fields:
+
                 header.button.link:
                   type: text
-                  label: Mailto Link
-                  description: For Example 'mailto:youremail@here.com'
+                  label: Link
+                  description: For example 'mailto:youremail@here.com'
+
                 header.button.text:
                   type: text
                   label: Button Text
+
                 header.button.icon:
-                  type: iconpicker
-                  label: FA Icon
+                  type: text
+                  label: FontAwesome Icon Classes
                   description: For example, `fas fa-envelope`.
-                

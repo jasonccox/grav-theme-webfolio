@@ -9,28 +9,44 @@ form:
           type: tab
           title: Intro
           fields:
+            header.links:
+              type: list
+              label: Intro Links
+              style: horizontal
+              fields:
+                .link:
+                  type: text
+                  label: URL
+                .icon:
+                  type: text
+                  label: Font Awesome Icon Classes
+                  description: For example, "fas fa-envelope"
             header.use_footer_links:
               type: toggle
               label: Use Footer Links
               highlight: 1
-              help: This will let the section use the links defined in the footer section
+              description: If activated, the Footer Links defined in the theme configuration will be shown with the links defined here.
               options:
                 1: Yes
                 0: No
               validate:
                 type: bool
             header.image:
-              type: file
+              type: filepicker
               label: Custom Intro Image
-              size: large
-              destination: 'self@'
-              multiple: false
-              markdown: true
-              description: First image uploaded will be used for the intro section
+              folder: 'self@'
+              preview_images: true
+              description: Choose from an image uploaded to the Page Media section of the Content tab to set the Intro image.
               accept:
-                - image/*
+                - .jpg
+                - .jpeg
+                - .png
+                - .gif
+                - .bmp
+                - .svg
             header.img_alt:
               type: text
-              label: Image Caption
+              label: Alt Text
               validate:
                 type: textarea
+            

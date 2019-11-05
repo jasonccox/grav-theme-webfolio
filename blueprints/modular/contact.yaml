@@ -19,7 +19,6 @@ form:
                 0: No
               validate:
                 type: bool
-
             
             header.button:
               type: section

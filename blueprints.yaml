@@ -73,7 +73,7 @@ form:
         .link:
           type: text
           label: URL
-          description: Links are relative unless <tt style="color: crimson;">http://</tt> or <tt style="color: crimson;">https://</tt> is added to the link.
+          description: Links are relative unless the protocol (e.g., <tt style="color: crimson;">https://</tt>) is included.
 
     footer_credit:
       type: toggle

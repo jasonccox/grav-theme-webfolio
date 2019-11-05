@@ -9,16 +9,19 @@ form:
           type: tab
           title: Projects
           fields:
+
             header.projects:
               name: projects
               type: list
               label: Projects
               fields:
+
                 .title:
                   type: text
                   label: Title
                   validate:
                     type: textarea
+
                 .image:
                   type: filepicker
                   label: Image
@@ -30,9 +33,11 @@ form:
                     - .png
                     - .bmp
                     - .svg
+
                 .description:
                   type: text
                   label: Description
+                  
                 .link:
                   type: text
                   label: Link to Project

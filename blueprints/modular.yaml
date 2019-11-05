@@ -9,6 +9,7 @@ form:
           type: tab
           title: Modular
           fields:
+
             header.modules_in_menu:
               type: toggle
               label: Show Modules in Navigation Menu
@@ -19,6 +20,7 @@ form:
                 0: No
               validate:
                 type: bool
+                
             header.single_page_menu:
               type: toggle
               label: Show Single-Page Menu

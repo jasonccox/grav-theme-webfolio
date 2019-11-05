@@ -9,19 +9,23 @@ form:
           type: tab
           title: About
           fields:
+
             header.details:
               name: details
               type: list
               label: Details
               description: Sub-sections to be shown after the page's Markdown content. Three details typically looks best.
               fields:
+
                 .title:
                   type: text
                   label: Title
+
                 .icon:
                   type: text
                   label: FontAwesome Icon Classes
                   description: For example, `fas fa-envelope`.
+                  
                 .content:
                   type: textarea
                   label: Content

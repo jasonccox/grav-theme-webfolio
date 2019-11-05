@@ -9,18 +9,22 @@ form:
           type: tab
           title: Intro
           fields:
+
             header.links:
               type: list
               label: Intro Links
               style: horizontal
               fields:
+
                 .link:
                   type: text
                   label: URL
+
                 .icon:
                   type: text
                   label: Font Awesome Icon Classes
                   description: For example, "fas fa-envelope"
+
             header.use_footer_links:
               type: toggle
               label: Use Footer Links
@@ -31,6 +35,7 @@ form:
                 0: No
               validate:
                 type: bool
+
             header.image:
               type: filepicker
               label: Custom Intro Image
@@ -44,6 +49,7 @@ form:
                 - .gif
                 - .bmp
                 - .svg
+                
             header.img_alt:
               type: text
               label: Alt Text

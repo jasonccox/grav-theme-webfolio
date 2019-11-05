@@ -9,6 +9,7 @@ form:
           type: tab
           title: Contact
           fields:
+
             header.show_form:
               type: toggle
               label: Show Contact Form
@@ -24,15 +25,17 @@ form:
               type: section
               title: Contact Button
               fields:
+
                 header.button.link:
                   type: text
                   label: Link
                   description: For example 'mailto:youremail@here.com'
+
                 header.button.text:
                   type: text
                   label: Button Text
+
                 header.button.icon:
                   type: text
                   label: FontAwesome Icon Classes
                   description: For example, `fas fa-envelope`.
-                

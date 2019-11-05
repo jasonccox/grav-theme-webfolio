@@ -21,7 +21,7 @@ form:
                 type: bool
             header.single_page_menu:
               type: toggle
-              label: Display at root level
+              label: Show Single-Page Menu
               highlight: 1
               description: If this is activated, each child module will be a navigable menu item at root menu level (useful for single page websites).
               options:

@@ -52,7 +52,7 @@ form:
 
     show_external_links:
       type: toggle
-      label: Show Extra Links in Navbar
+      label: Show Extra Links in Navigation Menu
       highlight: 0
       default: 0
       options:
@@ -65,6 +65,7 @@ form:
       type: list
       style: horizontal
       label: Extra Links
+      description: Additional links to be shown in the navigation menu.
       fields:
         .text:
           type: text
@@ -72,7 +73,7 @@ form:
         .link:
           type: text
           label: URL
-          description: Links are relative unless <tt style="color: crimson;">http://</tt> or <tt style="color: crimson;">https://</tt> is added to the link.
+          description: Links are relative unless the protocol (e.g., <tt style="color: crimson;">https://</tt>) is included.
 
     footer_credit:
       type: toggle

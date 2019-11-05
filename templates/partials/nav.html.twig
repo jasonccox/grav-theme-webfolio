@@ -3,5 +3,5 @@
 <ul class="navigation">
     {{ macros.nav_loop(pages.children, false, false) }}
     
-    {{ macros.link_loop(theme_var('show_external_links'), theme_var('external_links')) }}
+    {{ macros.link_loop(config.theme.show_external_links, config.theme.external_links) }}
 </ul>

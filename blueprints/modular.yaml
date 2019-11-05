@@ -11,7 +11,7 @@ form:
           fields:
             header.modules_in_menu:
               type: toggle
-              label: Submenu for modules
+              label: Show Modules in Navigation Menu
               highlight: 1
               description: If activated, each child module will be a navigable sub-menu item under the parent page in the navigation bar.
               options:

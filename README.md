@@ -4,7 +4,7 @@ The **Webfolio** Theme is a basic theme for creating an online portfolio and blo
 
 ## Sample
 
-My own personal website uses this theme. Feel free to [check it out](https://jasoncarloscox.com) or even look at the [source code](https://gitlab.com/jasonccox/personal-site).
+My own personal website uses this theme. Feel free to [check it out](https://jasoncarloscox.com) or even look at the [source code](https://github.com/jasonccox/personal-site).
 
 ## Intstallation
 

@@ -24,7 +24,7 @@
 		color: $color-text;
 
 		&:hover {
-			color: darken($color-text, $darken-hover);
+			color: $color-text-hover;
 		}
 	}
 }

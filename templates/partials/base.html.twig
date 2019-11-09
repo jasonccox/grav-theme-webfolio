@@ -20,6 +20,7 @@
 {% endblock head%}
 
 {% block stylesheets %}
+    {% include 'partials/css-vars.html.twig' %}
     {% do assets.addCss('theme://css/normalize.css', 98) %}
     {% do assets.addCss('theme://css-compiled/theme.min.css', 98) %}
     {% do assets.addCss('theme://css/custom.css', 98) %}

@@ -11,6 +11,22 @@
 	background-color: $color-bg-alt;
 }
 
+.bg-hover {
+    background-color: $color-bg-hover;
+}
+
+.bg-blockquote {
+    background-color: $color-bg-blockquote;
+}
+
+.bg-accent {
+    background-color: $color-accent;
+}
+
+.bg-accent-hover {
+    background-color: $color-accent-hover;
+}
+
 // text colors
 
 .color-bg {
@@ -33,8 +49,16 @@
     color: $color-text-dark;
 }
 
+.color-text-hover {
+    color: $color-text-hover;
+}
+
 .color-accent {
     color: $color-accent;
+}
+
+.color-accent-hover {
+    color: $color-accent-hover;
 }
 
 .color-required {
@@ -82,14 +106,7 @@
 // css variables
 
 :root {
-    // colors
-    --color-bg: $color-bg;
-    --color-bg-alt: $color-bg-alt;
-    --color-text: $color-text;
-    --color-text-light: $color-text-light;
-    --color-text-dark: $color-text-dark;
-    --color-accet: $color-accent;
-    --color-required: $color-required;
+    // colors provided by templates/partials/css-vars.html.twig
 
     // font families
     --font-family-base: $font-family-base;

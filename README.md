@@ -98,6 +98,8 @@ The following customizations are available by editing `user/config/themes/webfol
   - **Copyright-Holder's Name** (`copyright.name`) - The name of the person holding the copyright for the site.
   - **Link Target URL** (`copyright.link`) - A URL to which users will be directed when clicking on the copyright-holder's name.
 
+You can also edit the theme's color scheme using the fields in the `style` section of the `blueprints.yaml` file or via the Grav interface.
+
 ### Page Specific
 
 Some pages can have a bit of extra customization. These properties are set within the YAML header of the Markdown file for the page.

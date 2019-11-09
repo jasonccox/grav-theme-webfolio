@@ -1,3 +1,19 @@
 enabled: true
 dropdown:
   enabled: true
+footer_credit: true
+style:
+  color_bg: '#ffffff'
+  color_bg_alt: '#fafafa'
+  color_bg_blockquote: '#eaf2fd'
+  color_bg_code: '#f2f2f2'
+  color_bg_hover: '#d8d8d8'
+  color_text: '#444444'
+  color_text_light: '#606060'
+  color_text_dark: '#393939'
+  color_text_hover: '#393939'
+  color_accent: '#3085EE'
+  color_accent_hover: '#126ee0'
+  color_required: '#E85600'
+  color_border: '#e5e5e5'
+  color_border_blockquote: '#5789c7'

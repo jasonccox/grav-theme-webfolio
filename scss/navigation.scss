@@ -31,7 +31,7 @@ ul.navigation {
 		> ul {
 			visibility: hidden;
 			opacity: 0;
-			border: 0.03rem darken($color-bg, 10%) solid;
+			border: 0.03rem $color-border solid;
 			border-top: none;
 			height: 0;
 			transition: opacity .35s,visibility .35s,height .35s,padding .35s,top .5s;
@@ -75,7 +75,7 @@ ul.navigation {
 			font-size: $font-size-xs;
 
 			&:hover {
-				color: darken($color-text, $darken-hover);
+				color: $color-text-hover;
 			}
 		}
 
@@ -168,7 +168,7 @@ ul.navigation {
 		background-color: unset;
 
 		span {
-			background-color: darken($color-accent, $darken-hover);
+			background-color: $color-accent;
 		}
 	}
 
@@ -191,7 +191,7 @@ ul.navigation {
 		}
 
 		&:hover span {
-			background-color: darken($color-bg, $darken-hover);
+			background-color: $color-bg-hover;
 		}
 	}
 

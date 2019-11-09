@@ -1,6 +1,6 @@
 # Webfolio Theme
 
-The **Webfolio** Theme is a basic theme for creating an online portfolio and blog with [Grav CMS](http://github.com/getgrav/grav). It is partially based on the [Quark Theme](https://github.com/getgrav/grav-theme-quark).
+The **Webfolio** Theme is a configurable theme for creating an online portfolio and blog with [Grav CMS](http://github.com/getgrav/grav). It is partially based on the [Quark Theme](https://github.com/getgrav/grav-theme-quark).
 
 ## Sample
 

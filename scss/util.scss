@@ -11,6 +11,22 @@
 	background-color: $color-bg-alt;
 }
 
+.bg-hover {
+    background-color: $color-bg-hover;
+}
+
+.bg-blockquote {
+    background-color: $color-bg-blockquote;
+}
+
+.bg-accent {
+    background-color: $color-accent;
+}
+
+.bg-accent-hover {
+    background-color: $color-accent-hover;
+}
+
 // text colors
 
 .color-bg {
@@ -33,8 +49,16 @@
     color: $color-text-dark;
 }
 
+.color-text-hover {
+    color: $color-text-hover;
+}
+
 .color-accent {
     color: $color-accent;
+}
+
+.color-accent-hover {
+    color: $color-accent-hover;
 }
 
 .color-required {

@@ -1,3 +1,9 @@
+# v1.2.5
+##  11/09/2019
+
+1. [New](#new)
+    * The color scheme can now be customized via `blueprints.yaml` or the admin interface!
+
 # v1.2.4
 ##  10/29/2019
 

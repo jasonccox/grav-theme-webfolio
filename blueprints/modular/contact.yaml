@@ -5,37 +5,40 @@ form:
   fields:
     tabs:
       fields:
-        features:
-          type: tab
-          title: Contact
+        content:
           fields:
 
-            header.show_form:
-              type: toggle
-              label: Show Contact Form
-              highlight: 1
-              description: The form must be defined on the parent modular page.
-              options:
-                1: Yes
-                0: No
-              validate:
-                type: bool
-            
-            header.button:
+            contact:
               type: section
-              title: Contact Button
+              title: Contact Options
               fields:
 
-                header.button.link:
-                  type: text
-                  label: Link
-                  description: For example 'mailto:youremail@here.com'
+                header.show_form:
+                  type: toggle
+                  label: Show Contact Form
+                  highlight: 1
+                  description: The form must be defined on the parent modular page.
+                  options:
+                    1: Yes
+                    0: No
+                  validate:
+                    type: bool
+                
+                header.button:
+                  type: section
+                  title: Contact Button
+                  fields:
 
-                header.button.text:
-                  type: text
-                  label: Button Text
+                    header.button.link:
+                      type: text
+                      label: Link
+                      description: For example 'mailto:youremail@here.com'
 
-                header.button.icon:
-                  type: text
-                  label: FontAwesome Icon Classes
-                  description: For example, `fas fa-envelope`.
+                    header.button.text:
+                      type: text
+                      label: Button Text
+
+                    header.button.icon:
+                      type: text
+                      label: FontAwesome Icon Classes
+                      description: For example, `fas fa-envelope`.

@@ -5,21 +5,25 @@ form:
   fields:
     tabs:
       fields:
-        buttons:
-          type: tab
-          title: Blog Post
+        content:
           fields:
+
+            blog-post:
+              type: section
+              title: Blog Post Options
+              fields:
           
-            header.image:
-                  type: filepicker
-                  label: Summary Image
-                  folder: 'self@'
-                  preview_images: true
-                  description: Choose from an image uploaded to the Page Media section of the Content tab.
-                  accept:
-                    - .jpg
-                    - .jpeg
-                    - .png
-                    - .gif
-                    - .bmp
-                    - .svg
+                header.image:
+                      type: filepicker
+                      label: Summary Image
+                      folder: 'self@'
+                      preview_images: true
+                      description: Choose from an image uploaded to the Page Media section.
+                      help: This image will be displayed next to the post summary in the list of blog posts.
+                      accept:
+                        - .jpg
+                        - .jpeg
+                        - .png
+                        - .gif
+                        - .bmp
+                        - .svg

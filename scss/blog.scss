@@ -4,17 +4,31 @@
 
 .blog__card {
     width: 100%;
-    box-shadow: 0.3rem 0.3rem 1rem;
-    transition: box-shadow $transition-time-hover;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     align-content: stretch;
+
+    border:3px solid;
+    border-color: $color-accent-hover;
+    border-radius: 20px 90px 20px;
+    background-color: $color-bg-hover;
+    transition: border-color $transition-time-hover, background-color $transition-time-hover, border-radius $transition-time-hover;
+
+    .blog__card__img {
+        border-radius: 20px 90px 20px;
+        transition: border-radius $transition-time-hover;
+    }
     
     &:hover {
-		box-shadow: 0.6rem 0.6rem 1rem;
+        border-color: $color-accent;
+        background-color: $color-bg-code;
+        border-radius: 10px;
+
+        .blog__card__img{
+            border-radius: 10px 0px 0px 10px;
+        }
     }
 }
 

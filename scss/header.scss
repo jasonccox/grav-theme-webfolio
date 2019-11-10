@@ -7,7 +7,7 @@
 	height: 5rem;
 	z-index: 2;
 	background-color: $color-bg;
-	border-bottom: 0.03rem $color-border solid;
+	border-bottom: 0.03rem $color-bg-hover solid;
 	transition: all 0.5s ease;
 
 	.scrolled & {

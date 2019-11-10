@@ -31,7 +31,7 @@ ul.navigation {
 		> ul {
 			visibility: hidden;
 			opacity: 0;
-			border: 0.03rem $color-border solid;
+			border: 0.03rem $color-bg-hover solid;
 			border-top: none;
 			height: 0;
 			transition: opacity .35s,visibility .35s,height .35s,padding .35s,top .5s;

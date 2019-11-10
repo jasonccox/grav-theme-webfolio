@@ -53,6 +53,7 @@ form:
     show_external_links:
       type: toggle
       label: Show Extra Links in Navigation Menu
+      description: Additional links to be shown in the navigation menu.
       highlight: 0
       default: 0
       options:
@@ -65,7 +66,7 @@ form:
       type: list
       style: horizontal
       label: Extra Links
-      description: Additional links to be shown in the navigation menu.
+      help: Additional links to be shown in the navigation menu.
       fields:
         .text:
           type: text

@@ -38,7 +38,11 @@
 		color: $color-text;
 
 		&:hover {
+<<<<<<< HEAD
 			color: lighten($color-accent, 15%);
+=======
+			color: $color-text-hover;
+>>>>>>> master
 		}
 	}
 }

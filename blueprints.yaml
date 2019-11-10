@@ -1,6 +1,6 @@
 name: Webfolio
-version: 1.2.4
-description: A simple theme for creating an online portfolio
+version: 1.3.0
+description: A configurable theme for creating an online portfolio
 icon: globe
 author:
   name: Jason Cox
@@ -117,3 +117,64 @@ form:
           size: large
           label: Link Target URL
           description: The copyright-holder's name will be a link with this target URL
+
+    style:
+        type: fieldset
+        title: Custom Style
+        fields:
+            style.color_bg:
+                type: colorpicker
+                label: Background Color
+                description: The default background color used for pages. Also used as the text color on buttons.
+            style.color_bg_alt:
+                type: colorpicker
+                label: Alternate Background Color
+                description: An alternate background color.
+            style.color_bg_hover:
+                type: colorpicker
+                label: Background Hover Color
+                description: The color used when clickable items using the Background Color are hovered.
+            style.color_bg_blockquote:
+                type: colorpicker
+                label: Blockquote Background Color
+                description: The background color for blockquotes.
+            style.color_bg_code:
+                type: colorpicker
+                label: Code Background Color
+                description: The background color for code snippets.
+            style.color_text:
+                type: colorpicker
+                label: Text Color
+                description: The default text color.
+            style.color_text_light:
+                type: colorpicker
+                label: Light Text Color
+                description: A ligther text color.
+            style.color_text_dark:
+                type: colorpicker
+                label: Dark Text Color
+                description: A darker text color.
+            style.color_text_hover:
+                type: colorpicker
+                label: Text Hover Color
+                description: The color used when clickable text (e.g., links) is hovered.
+            style.color_accent:
+                type: colorpicker
+                label: Accent Color
+                description: An accent color. Used as the default color for links and buttons.
+            style.color_accent_hover:
+                type: colorpicker
+                label: Accent Hover Color
+                description: The color used when clickable items using the Accent Color are hovered.
+            style.color_required:
+                type: colorpicker
+                label: Required Fields Color
+                description: The color of required fields in a form.
+            style.color_border:
+                type: colorpicker
+                label: Border Color
+                description: The color used for borders and dividers.
+            style.color_border_blockquote:
+                type: colorpicker
+                label: Blockquote Border Color
+                description: The color used for the left border of blockquotes.

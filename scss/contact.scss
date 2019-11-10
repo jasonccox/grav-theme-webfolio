@@ -50,12 +50,20 @@
 
 .contact__divider {
 	margin: 1rem auto;
+<<<<<<< HEAD
 	background-color: lighten($color-bg, 20%);
+=======
+	background-color: $color-border;
+>>>>>>> master
 	height: 0.1rem;
 	width: calc(50% - 2rem);
 
 	.bg-alt & {
+<<<<<<< HEAD
 		background-color: lighten($color-bg-alt, 20%);
+=======
+		background-color: $color-border;
+>>>>>>> master
 	}
 }
 

@@ -14,6 +14,7 @@ form:
               name: projects
               type: list
               label: Projects
+              help: Project tiles to be shown after the page's Markdown content.
               fields:
 
                 .title:

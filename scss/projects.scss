@@ -12,25 +12,11 @@
 	max-width: $screen-xs;
 	margin: 2rem auto;
 	text-align: center;
-	transition: border-radius $transition-time-hover, border-color $transition-time-hover, background-color $transition-time-hover;
-	border-style: solid;
-    border-radius: 20px 50px 20px;
-	border-color: $color-accent2;
-	background-color: desaturate(darken($color-accent2, 35%), 70%);
-
-	.projects__card__img{		
-		border-radius: 20px 50px 0px;
-		transition: border-radius $transition-time-hover;
-	}
+	box-shadow: 0.3rem 0.3rem 1rem;
+	transition: box-shadow $transition-time-hover;
 
 	&:hover {
-		border-color: $color-accent;
-        border-radius: 8px;
-		background-color: desaturate(darken($color-accent, 40%), 70%);
-		
-		.projects__card__img{		
-			border-radius: 8px 8px 0px 0px;
-		}
+		box-shadow: 0.6rem 0.6rem 1rem;
 	}
 
 	a {
@@ -38,11 +24,7 @@
 		color: $color-text;
 
 		&:hover {
-<<<<<<< HEAD
-			color: lighten($color-accent, 15%);
-=======
 			color: $color-text-hover;
->>>>>>> master
 		}
 	}
 }

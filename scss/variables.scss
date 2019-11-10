@@ -1,15 +1,4 @@
 // Colors
-<<<<<<< HEAD
-$color-bg: #252525;
-$color-bg-alt: lighten($color-bg, 2%);
-$color-text: #9c9c9c;
-$color-text-header: #e2e2e2;
-$color-text-light: darken($color-text, 15%);
-$color-text-dark: lighten($color-text, 15%);
-$color-accent: #e27b36;
-$color-accent2: #5236e2;
-$color-required: #ff0037;
-=======
 $color-bg: var(--webfolio-color-bg);
 $color-bg-alt: var(--webfolio-color-bg-alt);
 $color-bg-blockquote: var(--webfolio-color-bg-blockquote);
@@ -24,11 +13,8 @@ $color-accent-hover: var(--webfolio-color-accent-hover);
 $color-required: var(--webfolio-color-required);
 $color-border: var(--webfolio-color-border);
 $color-border-blockquote: var(--webfolio-color-border-blockquote);
->>>>>>> master
 
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Francois+One&display=swap');
-$font-family-header: 'Francois One', sans-serif;
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
 $font-family-base: 'Open Sans', sans-serif;

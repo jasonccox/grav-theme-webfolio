@@ -1,33 +1,20 @@
 .blog {
-    padding: 1rem 1rem;
+    padding: 2rem 1rem;
 }
 
 .blog__card {
     width: 100%;
-    transition: border-radius $transition-time-hover, border-color $transition-time-hover, background-color $transition-time-hover;
-    border-style: solid;
-    border-radius: 30px 130px 30px;
-    border-color: $color-accent2;
+    box-shadow: 0.3rem 0.3rem 1rem;
+    transition: box-shadow $transition-time-hover;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     align-content: stretch;
-    background-color: desaturate(darken($color-accent2, 35%), 70%);
-
-    .blog__card__img{
-        border-radius: 30px 130px 0px;
-        transition: border-radius $transition-time-hover;
-    }
     
     &:hover {
-        border-color: $color-accent;
-        border-radius: 20px;
-        background-color: desaturate(darken($color-accent, 40%), 70%);
-
-        .blog__card__img{
-            border-radius: 20px 0px 0px 20px;
-        }
+		box-shadow: 0.6rem 0.6rem 1rem;
     }
 }
 
@@ -37,11 +24,11 @@
     color: unset;
 
     &:hover {
-        color: lighten($color-accent, 15%);
+        color: unset;
     }
 
     &:first-child {
-        margin-top: 2rem;
+        margin-top: 3rem;
     }
 }
 
@@ -53,7 +40,7 @@
 }
 
 .blog__card__content {
-    margin: 3rem;
+    margin: 1.5rem;
 }
 
 .blog__card__date {
@@ -61,7 +48,6 @@
 }
 
 .blog__card__preview {
-    word-wrap: break-word;
     margin-top: 1rem;
     overflow: hidden;
     padding-bottom: 0.25rem;
@@ -98,7 +84,7 @@
     }
     
     .blog__card__link {
-        margin: 2rem 0;
+        margin: 4rem 0;
     }
     
     .blog__card__img {

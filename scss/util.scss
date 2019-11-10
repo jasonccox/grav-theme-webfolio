@@ -57,13 +57,8 @@
     color: $color-accent;
 }
 
-<<<<<<< HEAD
-.color-accent2 {
-    color: $color-accent2;
-=======
 .color-accent-hover {
     color: $color-accent-hover;
->>>>>>> master
 }
 
 .color-required {
@@ -111,18 +106,7 @@
 // css variables
 
 :root {
-<<<<<<< HEAD
-    // colors
-    --color-bg: $color-bg;
-    --color-bg-alt: $color-bg-alt;
-    --color-text: $color-text;
-    --color-text-light: $color-text-light;
-    --color-text-dark: $color-text-dark;
-    --color-accent: $color-accent;
-    --color-required: $color-required;
-=======
     // colors provided by templates/partials/css-vars.html.twig
->>>>>>> master
 
     // font families
     --font-family-base: $font-family-base;

@@ -114,7 +114,7 @@ ul.navigation {
 			color: $color-bg;
 	
 			&.active, &:hover {
-				color: $color-accent2;
+				color: $color-accent;
 			}
 		}
 
@@ -168,11 +168,7 @@ ul.navigation {
 		background-color: unset;
 
 		span {
-<<<<<<< HEAD
-			background-color: darken($color-accent2, $darken-hover);
-=======
 			background-color: $color-accent;
->>>>>>> master
 		}
 	}
 

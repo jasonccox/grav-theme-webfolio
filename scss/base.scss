@@ -6,11 +6,6 @@
 	transition: color $transition-time-hover, background-color $transition-time-hover;
 }
 
-::selection {
-	color: lighten($color-accent, 15%);
-	background: $color-accent2;
-  }
-
 body {
 	background-color: $color-bg;
 	color: $color-text;
@@ -55,17 +50,12 @@ a {
 	text-decoration: none;
 
 	&:hover {
-<<<<<<< HEAD
-		color: $color-accent2
-=======
 		color: $color-accent-hover;
->>>>>>> master
 	}
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: $font-family-header;
-	font-weight: $font-weight-normal;
+	font-weight: $font-weight-bold;
 	margin-top: 2rem;
 	margin-bottom: 1rem;
 
@@ -80,7 +70,6 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
 	font-size: $font-size-xxl;
-	color: darken($color-text-header, 5%);
 
 	code {
 		font-size: $font-size-xxl - 0.75rem;
@@ -89,7 +78,6 @@ h1 {
 
 h2 {
 	font-size: $font-size-xl;
-	color: darken($color-text-header, 10%);
 
 	code {
 		font-size: $font-size-xl - 0.5rem;
@@ -98,7 +86,6 @@ h2 {
 
 h3 {
 	font-size: $font-size-l;
-	color: darken($color-text-header, 15%);
 
 	code {
 		font-size: $font-size-l - 0.375rem;
@@ -107,7 +94,6 @@ h3 {
 
 h4 {
 	font-size: $font-size-m;
-	color: darken($color-text-header, 15%);
 
 	code {
 		font-size: $font-size-m - 0.25rem;
@@ -116,7 +102,6 @@ h4 {
 
 h5 {
 	font-size: $font-size-s;
-	color: darken($color-text-header, 20%);
 
 	code {
 		font-size: $font-size-s - 0.2rem;
@@ -125,7 +110,6 @@ h5 {
 
 h6 {
 	font-size: $font-size-s;
-	color: darken($color-text-header, 25%);
 
 	code {
 		font-size: $font-size-s - 0.2rem;
@@ -151,7 +135,7 @@ input, textarea {
 	}
 
 	&:focus {
-		border-color: $color-accent2;
+		border-color: $color-accent;
 	}
 }
 
@@ -162,12 +146,7 @@ button {
 	padding: 0.5rem;
 
 	&:hover {
-<<<<<<< HEAD
-		background-color: darken($color-accent2, $darken-hover);
-		color: lighten($color-accent, 15%);
-=======
 		background-color: $color-accent-hover;
->>>>>>> master
 	}
 
 	.bg-alt & {
@@ -189,13 +168,8 @@ button {
 }
 
 blockquote {
-<<<<<<< HEAD
-	background-color: darken(desaturate($color-accent, 60%), 40%);
-	border-left: 0.5rem solid desaturate($color-accent2, 15%);
-=======
 	background-color: $color-bg-blockquote;
 	border-left: 0.5rem solid $color-border-blockquote;
->>>>>>> master
 	padding: 0.5rem;
 	margin-left: 0.5rem;
 	width: calc(100% - 0.5rem);

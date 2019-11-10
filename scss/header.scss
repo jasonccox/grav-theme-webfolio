@@ -1,6 +1,7 @@
 .header {
 	padding: 0 1rem;
 	position: fixed;
+	opacity: 80%;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -12,6 +13,8 @@
 
 	.scrolled & {
 		height: 3rem;
+		background-color: $color-bg-alt;
+		opacity: 98%;
 	}
 }
 

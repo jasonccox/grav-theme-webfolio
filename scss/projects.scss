@@ -12,11 +12,34 @@
 	max-width: $screen-xs;
 	margin: 2rem auto;
 	text-align: center;
-	box-shadow: 0.3rem 0.3rem 1rem;
-	transition: box-shadow $transition-time-hover;
+
+	background-color: $color-bg-hover;;
+	border: 2px solid;
+	border-radius: 20px 55px 20px;
+	border-color: $color-accent-hover;
+	transition: border-radius $transition-time-hover, border-color $transition-time-hover, background-color $transition-time-hover;
+
+	.projects__card__img {		
+		border-radius: 20px 55px 20px;
+		transition: border-radius $transition-time-hover;
+	}
+
+	.projects__card__txt {		
+		border-radius: 20px 55px 20px;
+		transition: border-radius $transition-time-hover;
+	}
 
 	&:hover {
-		box-shadow: 0.6rem 0.6rem 1rem;
+		border-radius: 10px;
+		border-color: $color-accent;
+		background-color: $color-bg-code;
+
+		.projects__card__img {
+			border-radius: 10px;
+		}
+		.projects__card__txt {
+			border-radius: 10px;
+		}
 	}
 
 	a {

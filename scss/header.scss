@@ -26,11 +26,47 @@
 	align-content: center;
 }
 
+/*.header__dual__logo {
+
+}*/
+
 .logo__img {
 	height: 3rem;
 	transition: all 0.5s ease;
 
 	.scrolled & {
 		height: 2rem;
+	}
+}
+
+.logo__img__1 {
+	height: 3rem;
+	opacity: 100%;
+	z-index: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	position: absolute;
+	transition: all 0.5s ease;
+
+	.scrolled & {
+		height: 2rem;
+		opacity: 0%;
+	}
+}
+
+.logo__img__2 {
+	height: 3rem;
+	opacity: 0%;
+	z-index: 1;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	position: absolute;
+	transition: all 0.5s ease;
+
+	.scrolled & {
+		height: 2rem;
+		opacity: 100%;
 	}
 }

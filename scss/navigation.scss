@@ -111,7 +111,7 @@ ul.navigation {
 		}
 	
 		a {
-			color: $color-bg;
+			color: $color-text;
 	
 			&.active, &:hover {
 				color: $color-accent;
@@ -174,10 +174,11 @@ ul.navigation {
 
 	&.active {
 		span {
-			background-color: $color-bg;
+			background-color: $color-text;
 
 			&.top{
 				transform: translateY(0.6rem) translateX(0) rotate(45deg);
+				background-color: $color-accent-hover;
 			}
 	
 			&.middle{
@@ -186,12 +187,13 @@ ul.navigation {
 	
 			&.bottom{
 				transform: translateY(-0.6rem) translateX(0) rotate(-45deg);
+				background-color: $color-accent-hover;
 			}
 			
 		}
 
 		&:hover span {
-			background-color: $color-bg-hover;
+			background-color: $color-accent-hover;
 		}
 	}
 

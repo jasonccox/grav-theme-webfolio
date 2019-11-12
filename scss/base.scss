@@ -2,6 +2,11 @@
 	box-sizing: border-box;
 }
 
+::selection {
+	background: $color-accent;
+	color: white;
+  }
+
 :hover {
 	transition: color $transition-time-hover, background-color $transition-time-hover;
 }

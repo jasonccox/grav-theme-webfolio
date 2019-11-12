@@ -91,6 +91,7 @@ The following customizations are available by editing `user/config/themes/webfol
 - **Custom Logo** (`custom_logo`) - A logo image to be placed on the left side of the header throughout the site.
 - **Mobile Cusom Logo** (`custom_logo_mobile`) - A logo image to be placed at the top left of the navigation overlay on smaller screens. Note that this logo will appear on a dark background.
 - **Favicon** (`favicon`) - A small image to be used as the icon for your site in the browser.
+- **Extra Navigation Links** (`external_links`) - A list of links to be shown on the navigation menu after page and site navigation links. Can be toggled on or off by setting the value for `show_external_links` as `true` or `false`.
 - **Show Credit in Footer** (`footer_credit`) - Whether or not to display a sentence in your site footer giving credit to this theme and to Grav.
 - **Footer Links** (`footer_links`) - A list of links to be shown in the footer of every page. Each link has a `link` (URL) property and a `icon` (Font Awesome icon classes, such as `fas fa-envelope`) property.
 - **Copyright** - Include any of these fields to show a copyright notice in your site's footer.

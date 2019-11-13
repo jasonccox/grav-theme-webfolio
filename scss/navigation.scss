@@ -86,7 +86,7 @@ ul.navigation {
 	}
 }
 
-@media only screen and (max-width: $screen-l + 200px) {
+@media only screen and (max-width: $screen-xl) {
 	.nav--main__nav ul.navigation > li:last-child > ul {
 		left: unset;
 		right: -0.5rem;

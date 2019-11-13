@@ -132,4 +132,5 @@ Don't hesitate to reach out to me at [contact@jasoncarloscox.com](mailto:contact
 
 ## Contributing
 
-Feel free to submit an issue or merge request if you see a way to make this theme better!
+Feel free to submit an issue or merge request if you see a way to make this theme better! I'm very thankful for the following people for their contributions:
+- [Aashish Vasudevan](https://github.com/aashishvasu)

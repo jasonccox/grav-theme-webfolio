@@ -1,0 +1,50 @@
+title: Projects
+'@extends': default
+
+form:
+  fields:
+    tabs:
+      fields:
+        content:
+          fields:
+
+            projects:
+              type: section
+              title: Project Options
+              fields:
+
+                header.projects:
+                  name: projects
+                  type: list
+                  label: Projects
+                  help: Project tiles to be shown after the page's Markdown content.
+                  fields:
+
+                    .title:
+                      type: text
+                      label: Title
+                      validate:
+                        type: textarea
+
+                    .image:
+                      type: filepicker
+                      label: Image
+                      folder: 'self@'
+                      preview_images: true
+                      description: Choose from an image uploaded to the Page Media section.
+                      accept:
+                        - .jpg
+                        - .jpeg
+                        - .png
+                        - .gif
+                        - .bmp
+                        - .svg
+
+                    .description:
+                      type: text
+                      label: Description
+                      
+                    .link:
+                      type: text
+                      label: Link to Project
+

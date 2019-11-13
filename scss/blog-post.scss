@@ -1,5 +1,15 @@
+.blog-post__container {
+    max-width: $screen-l;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .blog-post {
     padding: 2rem 1rem;
+    display: flex;
+    flex-direction: row;
+    vertical-align: stretch;
+    justify-content: center;
 }
 
 .blog-post__header__date {
@@ -12,4 +22,24 @@
 
 .blog-post__content img {
     max-width: 100%;
+}
+
+.blog-post__sidebar {
+    display: none;
+}
+
+@media only screen and (min-width: $screen-m){
+    .blog-post__sidebar {
+        display: block;
+        min-width: 18rem;
+        padding: 1rem 1rem;
+        background-color: $color-bg-alt;
+    }
+
+    .blog-post__container {
+        max-width: $screen-l;
+        align-content: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }

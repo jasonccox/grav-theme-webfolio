@@ -1,3 +1,11 @@
+# v1.4.0
+##  11/13/2019
+
+1. [New](#new)
+    * Extra links can be added to the navigation menu. (Thanks, Aashish!)
+1. [Improved](#improved)
+    * Page frontmatter fields are now accessible via the Admin interface. (Thanks, Aashish!)
+
 # v1.3.0
 ##  11/09/2019
 

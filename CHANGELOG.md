@@ -1,3 +1,9 @@
+# v1.4.1
+##  11/20/2019 
+
+1. [Fixed](#bugfix)
+    * The Intro section content is now full-width even if there is no image.
+
 # v1.4.0
 ##  11/13/2019
 

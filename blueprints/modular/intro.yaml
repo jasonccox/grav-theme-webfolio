@@ -34,8 +34,8 @@ form:
                   highlight: 1
                   description: If activated, the Footer Links defined in the theme configuration will be shown with the links defined here.
                   options:
-                    1: Yes
-                    0: No
+                    1: PLUDIN_ADMIN.YES
+                    0: PLUDIN_ADMIN.NO
                   validate:
                     type: bool
 
@@ -58,4 +58,3 @@ form:
                   label: Alt Text
                   validate:
                     type: textarea
-            

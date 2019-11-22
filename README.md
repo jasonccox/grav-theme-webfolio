@@ -45,6 +45,7 @@ The `intro` template is used to create an introduction section within a modular 
 - `use_footer_links` - Whether the `footer_links` from the site-wide customization should also appear in this section. See the *Customization* section below for more information about `footer_links`.
 - `links` - A list of icon links to be displayed. Each link needs to specify a `link` (the URL to which it points) and an `icon` (Font-Awesome CSS classes, such as `fas fa-code`). These links will be displayed after the `footer_links` if `use_footer_links` is true.
 - `img_alt` - The alt text to be used for the image in this section.
+- `center_content` - If true, the content (not the Custom Intro Image) will be centered instead of left-aligned.
 
 #### About
 

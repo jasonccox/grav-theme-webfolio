@@ -8,7 +8,7 @@
             {{ image.html('', page.header.img_alt, 'intro__img')|raw }}
         {% endif %}
 
-        <div class="intro__content {% if image %} with-img {% endif %}">
+        <div class="intro__content {% if image %} with-img {% endif %} {% if page.header.center_content %} center-text {% endif %}">
             {{ content|raw }}
             
             <div class="intro__links">

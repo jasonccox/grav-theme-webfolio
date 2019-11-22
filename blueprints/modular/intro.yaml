@@ -58,3 +58,15 @@ form:
                   label: Alt Text
                   validate:
                     type: textarea
+
+                header.center_content:
+                  type: toggle
+                  label: Center Content
+                  highlight: 1
+                  default: 0
+                  description: If activated, the content (not the Custom Intro Image) will be centered instead of left-aligned.
+                  options:
+                    1: PLUDIN_ADMIN.YES
+                    0: PLUDIN_ADMIN.NO
+                  validate:
+                    type: bool

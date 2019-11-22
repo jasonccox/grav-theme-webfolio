@@ -1,3 +1,9 @@
+# v1.5.1
+##  11/21/2019
+
+1. [Fixed](#bugfix)
+    * A typo in the blueprint files causing toggles to have wrong text is now corrected.
+
 # v1.5.0
 ##  11/21/2019
 

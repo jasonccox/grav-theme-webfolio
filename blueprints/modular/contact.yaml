@@ -19,8 +19,8 @@ form:
                   highlight: 1
                   description: The form must be defined on the parent modular page.
                   options:
-                    1: PLUGIN_ADMIN.NO.YES
-                    0: PLUGIN_ADMIN.NO.NO
+                    1: PLUGIN_ADMIN.YES
+                    0: PLUGIN_ADMIN.NO
                   validate:
                     type: bool
                 

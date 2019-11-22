@@ -34,8 +34,8 @@ form:
                   highlight: 1
                   description: If activated, the Footer Links defined in the theme configuration will be shown with the links defined here.
                   options:
-                    1: PLUDIN_ADMIN.YES
-                    0: PLUDIN_ADMIN.NO
+                    1: PLUGIN_ADMIN.NO.YES
+                    0: PLUGIN_ADMIN.NO.NO
                   validate:
                     type: bool
 
@@ -66,7 +66,7 @@ form:
                   default: 0
                   description: If activated, the content (not the Custom Intro Image) will be centered instead of left-aligned.
                   options:
-                    1: PLUDIN_ADMIN.YES
-                    0: PLUDIN_ADMIN.NO
+                    1: PLUGIN_ADMIN.NO.YES
+                    0: PLUGIN_ADMIN.NO.NO
                   validate:
                     type: bool

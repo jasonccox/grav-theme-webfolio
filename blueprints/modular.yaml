@@ -19,8 +19,8 @@ form:
                   highlight: 1
                   description: If activated, each child module will be a navigable sub-menu item under the parent page in the navigation bar.
                   options:
-                    1: Yes
-                    0: No
+                    1: PLUGIN_ADMIN.YES
+                    0: PLUGIN_ADMIN.NO
                   validate:
                     type: bool
                     
@@ -30,7 +30,7 @@ form:
                   highlight: 1
                   description: If activated, each child module will be a top-level navigable menu item, and no other links will be shown in the navigation menu.
                   options:
-                    1: Yes
-                    0: No
+                    1: PLUGIN_ADMIN.YES
+                    0: PLUGIN_ADMIN.NO
                   validate:
                     type: bool

@@ -11,6 +11,14 @@
 	width: 50%;
 }
 
+.intro__img.rounded {
+	border-radius: 20px;
+}
+
+.intro__img.circle {
+	border-radius: 50%;
+}
+
 .intro__content {
 	flex: 0 100%;
 	text-align: center;

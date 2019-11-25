@@ -59,6 +59,16 @@ form:
                   validate:
                     type: textarea
 
+                header.img_style:
+                  type: select
+                  label: Image Style
+                  description: Choose if the image should be a circle or have rounded corners.
+                  size: medium
+                  options:
+                    '': None
+                    circle: Circle
+                    rounded: Rounded Corners
+
                 header.center_content:
                   type: toggle
                   label: Center Content

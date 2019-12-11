@@ -1,3 +1,9 @@
+# UNRELEASED
+##  [date]
+
+1. [Improved](#improved)
+    * Made more options editable from the Admin interface and rearranged existing options to reduce confusion.
+
 # v1.5.1
 ##  11/21/2019
 

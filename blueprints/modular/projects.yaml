@@ -1,16 +1,16 @@
 title: Projects
-'@extends': default
+'@extends': partials/module-base
 
 form:
   fields:
     tabs:
       fields:
-        content:
+        options:
           fields:
 
             projects:
               type: section
-              title: Project Options
+              title: Projects Options
               fields:
 
                 header.projects:
@@ -31,7 +31,7 @@ form:
                       label: Image
                       folder: 'self@'
                       preview_images: true
-                      description: Choose from an image uploaded to the Page Media section.
+                      description: Choose from an image uploaded to the Page Media section of the Content tab.
                       accept:
                         - .jpg
                         - .jpeg

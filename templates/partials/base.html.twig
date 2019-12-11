@@ -50,6 +50,8 @@
                 {% include 'partials/nav.html.twig' %}
             {% endblock %}
             </nav>
+
+            <button class="nav--mobile__open">Menu</button>
         </div>
     </header>
 {% endblock %}
@@ -64,11 +66,6 @@
     {% include 'partials/footer.html.twig' %}
 {% endblock %}
 
-<button class="nav--mobile__toggle" id="nav-mobile-toggle">
-    <span class="top"></span>
-    <span class="middle"></span>
-    <span class="bottom"></span>
-</button>
 
 <div class="nav--mobile__overlay" id="nav-mobile-overlay">
     <div class="nav--mobile__overlay__logo">

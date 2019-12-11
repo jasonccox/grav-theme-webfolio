@@ -1,11 +1,11 @@
 title: About
-'@extends': default
+'@extends': partials/module-base
 
 form:
   fields:
     tabs:
       fields:
-        content:
+        options:
           fields:
 
             about:

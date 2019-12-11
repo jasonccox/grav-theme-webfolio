@@ -1,9 +1,9 @@
+{% extends 'partials/module-base.html.twig' %}
 {% import 'macros/macros.html.twig' as macros %}
 
 {% set image = page.media.images|first %}
-
-<section class="section modular {{ page.header.class }}">
-    <section class="container intro">
+{% block module_content %}
+    <div class="intro">
         {% if image %}
             {{ image.html('', page.header.img_alt, 'intro__img')|raw }}
         {% endif %}
@@ -22,5 +22,5 @@
                 {% endfor %}
             </div>
         </div>
-    </section>
-</section>
+    </div>
+{% endblock %}

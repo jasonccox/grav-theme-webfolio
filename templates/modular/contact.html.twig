@@ -1,8 +1,10 @@
+{% extends 'partials/module-base.html.twig' %}
+
 {% set button = page.header.button %}
 {% set show_form = page.header.show_form %}
 
-<section class="section modular {{ page.header.class }}">
-    <section class="container contact">
+{% block module_content %}
+    <div class="contact">
         <div>
             {{ content|raw }}
         </div>
@@ -31,5 +33,5 @@
                 {% include 'forms/form.html.twig' %}
             </div>
         {% endif %}
-    </section>
-</section>
+    </div>
+{% endblock %}

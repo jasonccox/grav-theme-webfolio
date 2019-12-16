@@ -1,18 +1,18 @@
 title: Modular
-'@extends': default
+'@extends': partials/base
 
 form:
   fields:
     tabs:
       fields:
-        content:
+        options:
           fields:
 
             modular:
               type: section
               title: Modular Options
-              fields:
 
+              fields:
                 header.modules_in_menu:
                   type: toggle
                   label: Show Modules in Navigation Menu

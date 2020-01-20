@@ -65,7 +65,7 @@ form:
                   description: Choose if the image should be a circle or have rounded corners.
                   size: medium
                   options:
-                    '': None
+                    '': Square
                     circle: Circle
                     rounded: Rounded Corners
 

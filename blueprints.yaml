@@ -51,7 +51,7 @@ form:
       validate:
         type: bool
     
-    custom_logo_alt:
+    custom_logo_scrolled:
       type: file
       label: Scrolled Logo
       size: large

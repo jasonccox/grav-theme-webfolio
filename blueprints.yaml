@@ -53,7 +53,7 @@ form:
     
     custom_logo_alt:
       type: file
-      label: Alternate Logo
+      label: Scrolled Logo
       size: large
       destination: 'image://webfolio'
       multiple: false

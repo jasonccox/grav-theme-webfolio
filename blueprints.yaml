@@ -38,18 +38,6 @@ form:
       description: Will be used on the overlay for the mobile navigation menu
       accept:
         - image/*
-
-    use_custom_logo_alt:
-      type: toggle
-      label: Use Alternate Logo For Scrolling
-      description: Toggle to use an alternate logo in the navigation menu when the site is scrolled
-      highlight: 0
-      default: 0
-      options:
-        1: PLUGIN_ADMIN.YES
-        0: PLUGIN_ADMIN.NO
-      validate:
-        type: bool
     
     custom_logo_scrolled:
       type: file

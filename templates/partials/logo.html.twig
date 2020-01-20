@@ -10,7 +10,7 @@
   {% set logo_img = media['theme://images/grav-logo.svg'] %}
 {% endif %}
 
-{% if theme_var('use_custom_logo_alt') %}
+{% if theme_var('custom_logo_scrolled') %}
 
   <a href="{{ home_url }}">
     {{ logo_img.html('', config.site.title, 'logo__img__1')|raw }}

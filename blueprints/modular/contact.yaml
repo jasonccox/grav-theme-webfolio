@@ -1,0 +1,44 @@
+title: Contact
+'@extends': partials/module-base
+
+form:
+  fields:
+    tabs:
+      fields:
+        options:
+          fields:
+
+            contact:
+              type: section
+              title: Contact Options
+              fields:
+
+                header.show_form:
+                  type: toggle
+                  label: Show Contact Form
+                  highlight: 1
+                  description: The form must be defined on the parent modular page.
+                  options:
+                    1: PLUGIN_ADMIN.YES
+                    0: PLUGIN_ADMIN.NO
+                  validate:
+                    type: bool
+                
+                header.button:
+                  type: section
+                  title: Contact Button
+                  fields:
+
+                    header.button.link:
+                      type: text
+                      label: Link
+                      description: For example 'mailto:youremail@here.com'
+
+                    header.button.text:
+                      type: text
+                      label: Button Text
+
+                    header.button.icon:
+                      type: text
+                      label: FontAwesome Icon Classes
+                      description: For example, `fas fa-envelope`.

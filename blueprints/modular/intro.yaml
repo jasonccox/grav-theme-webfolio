@@ -1,0 +1,72 @@
+title: Intro
+'@extends': partials/module-base
+
+form:
+  fields:
+    tabs:
+      fields:
+        options:
+          fields:
+
+            intro:
+              type: section
+              title: Intro Options
+              fields:
+
+                header.links:
+                  type: list
+                  label: Intro Links
+                  style: horizontal
+                  fields:
+
+                    .link:
+                      type: text
+                      label: URL
+
+                    .icon:
+                      type: text
+                      label: Font Awesome Icon Classes
+                      description: For example, "fas fa-envelope"
+
+                header.use_footer_links:
+                  type: toggle
+                  label: Use Footer Links
+                  highlight: 1
+                  description: If activated, the Footer Links defined in the theme configuration will be shown with the links defined here.
+                  options:
+                    1: PLUGIN_ADMIN.YES
+                    0: PLUGIN_ADMIN.NO
+                  validate:
+                    type: bool
+
+                header.image:
+                  type: filepicker
+                  label: Custom Intro Image
+                  folder: 'self@'
+                  preview_images: true
+                  description: Choose from an image uploaded to the Page Media section of the Content tab to set the Intro image.
+                  accept:
+                    - .jpg
+                    - .jpeg
+                    - .png
+                    - .gif
+                    - .bmp
+                    - .svg
+                    
+                header.img_alt:
+                  type: text
+                  label: Alt Text
+                  validate:
+                    type: textarea
+
+                header.center_content:
+                  type: toggle
+                  label: Center Content
+                  highlight: 1
+                  default: 0
+                  description: If activated, the content (not the Custom Intro Image) will be centered instead of left-aligned.
+                  options:
+                    1: PLUGIN_ADMIN.YES
+                    0: PLUGIN_ADMIN.NO
+                  validate:
+                    type: bool

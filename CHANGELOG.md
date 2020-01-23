@@ -1,3 +1,36 @@
+# UNRELEASED
+##  [date]
+
+1. [Improved](#improved)
+    * Made more options editable from the Admin interface and rearranged existing options to reduce confusion.
+    * Reduced code duplication in modular templates.
+
+# v1.5.1
+##  11/21/2019
+
+1. [Fixed](#bugfix)
+    * A typo in the blueprint files causing toggles to have wrong text is now corrected.
+
+# v1.5.0
+##  11/21/2019
+
+1. [New](#new)
+    * The `center_content` option now allows the Intro section content to be center-aligned instead of left-aligned.
+
+# v1.4.1
+##  11/20/2019
+
+1. [Fixed](#bugfix)
+    * The Intro section content is now full-width even if there is no image.
+
+# v1.4.0
+##  11/13/2019
+
+1. [New](#new)
+    * Extra links can be added to the navigation menu. (Thanks, Aashish!)
+1. [Improved](#improved)
+    * Page frontmatter fields are now accessible via the Admin interface. (Thanks, Aashish!)
+
 # v1.3.0
 ##  11/09/2019
 

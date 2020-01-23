@@ -1,0 +1,21 @@
+title: Module Base
+'@extends': partials/base
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        options:
+          fields:
+            module:
+              type: section
+              title: Module Options
+
+              fields:
+                class:
+                  type: text
+                  label: Module Classes
+                  description: A space-separated list of CSS classes to be applied to the module.

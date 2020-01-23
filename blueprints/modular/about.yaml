@@ -1,0 +1,34 @@
+title: About
+'@extends': partials/module-base
+
+form:
+  fields:
+    tabs:
+      fields:
+        options:
+          fields:
+
+            about:
+              type: section
+              title: About Options
+              fields:
+
+                header.details:
+                  name: details
+                  type: list
+                  label: Details
+                  help: Sub-sections to be shown after the page's Markdown content. Three details typically looks best.
+                  fields:
+
+                    .title:
+                      type: text
+                      label: Title
+
+                    .icon:
+                      type: text
+                      label: FontAwesome Icon Classes
+                      description: For example, `fas fa-envelope`.
+
+                    .content:
+                      type: textarea
+                      label: Content

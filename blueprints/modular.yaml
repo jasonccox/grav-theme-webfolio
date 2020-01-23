@@ -1,0 +1,36 @@
+title: Modular
+'@extends': partials/base
+
+form:
+  fields:
+    tabs:
+      fields:
+        options:
+          fields:
+
+            modular:
+              type: section
+              title: Modular Options
+
+              fields:
+                header.modules_in_menu:
+                  type: toggle
+                  label: Show Modules in Navigation Menu
+                  highlight: 1
+                  description: If activated, each child module will be a navigable sub-menu item under the parent page in the navigation bar.
+                  options:
+                    1: PLUGIN_ADMIN.YES
+                    0: PLUGIN_ADMIN.NO
+                  validate:
+                    type: bool
+                    
+                header.single_page_menu:
+                  type: toggle
+                  label: Show Single-Page Menu
+                  highlight: 1
+                  description: If activated, each child module will be a top-level navigable menu item, and no other links will be shown in the navigation menu.
+                  options:
+                    1: PLUGIN_ADMIN.YES
+                    0: PLUGIN_ADMIN.NO
+                  validate:
+                    type: bool

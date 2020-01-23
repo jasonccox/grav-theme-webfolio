@@ -1,0 +1,17 @@
+# ./.tmuxinator.yml
+
+name: webfolio
+root: ./
+
+windows:
+  - editor: vim
+  - misc: bash
+  - pages: 
+      root: ../../pages/
+      panes:
+        - vim
+  - server:
+      root: ../../../
+      panes:
+        - php -S localhost:8000 system/router.php
+  - sass: sass -s compressed --watch scss/theme.scss css-compiled/theme.min.css

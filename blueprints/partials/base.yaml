@@ -1,0 +1,45 @@
+title: Base
+'@extends': default
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        collection:
+          type: tab
+          title: Collection
+
+          fields:
+            help:
+              type: display
+              markdown: true
+              description: See the [Grav documentation](https://learn.getgrav.org/16/content/collections) for help with these fields. You may need to use Expert mode to edit additional collection fields.
+
+            header.content.items:
+              type: text
+              label: Items
+            
+            header.content.order.by:
+              type: text
+              label: Order By
+
+            header.content.order.dir:
+              type: text
+              label: Order Direction
+
+            header.content.limit:
+              type: text
+              label: Limit
+
+            header.content.pagination:
+              type: toggle
+              label: Pagination
+              highlight: 1
+              options:
+                1: PLUGIN_ADMIN.YES
+                0: PLUGIN_ADMIN.NO
+              validate:
+                type: bool

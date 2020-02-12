@@ -1,11 +1,11 @@
 title: Intro
-'@extends': default
+'@extends': partials/module-base
 
 form:
   fields:
     tabs:
       fields:
-        content:
+        options:
           fields:
 
             intro:
@@ -44,7 +44,7 @@ form:
                   label: Custom Intro Image
                   folder: 'self@'
                   preview_images: true
-                  description: Choose from an image uploaded to the Page Media section to set the Intro image.
+                  description: Choose from an image uploaded to the Page Media section of the Content tab to set the Intro image.
                   accept:
                     - .jpg
                     - .jpeg

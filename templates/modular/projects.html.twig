@@ -1,5 +1,7 @@
-<section class="section modular {{ page.header.class }}">
-    <section class="container projects">
+{% extends 'partials/module-base.html.twig' %}
+
+{% block module_content %}
+    <div class="projects">
         {{ content|raw }}
         
         <div class="projects__cards">
@@ -15,5 +17,5 @@
                 </div>
             {% endfor %}
         </div>
-    </section>
-</section>
+    </div>
+{% endblock %}

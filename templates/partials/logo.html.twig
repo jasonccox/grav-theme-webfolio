@@ -3,6 +3,8 @@
 {% set logo_img = "" %}
 {% if logo %}
   {% set logo_img = media['image://webfolio/' ~ (logo|first).name] %}
+
+  {# check theme images dir for backwards compatibility with v1.0.0 #}
   {% if not logo_img %}
     {% set logo_img = media['theme://images/' ~ (logo|first).name] %}
   {% endif %}

@@ -1,7 +1,8 @@
-# UNRELEASED
-## [date]
+# v1.5.3
+## 04/23/2020
 
 1. [Fixed](#bugfix)
+    * Fixed "Module Classes" field in admin panel to actually control `classes` Frontmatter field.
     * Corrected link to demo site in readme.
 
 # v1.5.2

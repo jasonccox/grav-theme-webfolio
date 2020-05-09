@@ -3,6 +3,8 @@
 {% set logo_img = "" %}
 {% if logo %}
   {% set logo_img = media['image://webfolio/' ~ (logo|first).name] %}
+
+  {# check theme images dir for backwards compatibility with v1.0.0 #}
   {% if not logo_img %}
     {% set logo_img = media['theme://images/' ~ (logo|first).name] %}
   {% endif %}
@@ -10,27 +12,6 @@
   {% set logo_img = media['theme://images/grav-logo.svg'] %}
 {% endif %}
 
-{% if theme_var('use_custom_logo_alt') %}
-
-  <a href="{{ home_url }}">
-    {{ logo_img.html('', config.site.title, 'logo__img__1')|raw }}
-  </a>
-
-  {% set logo_alt = theme_var('custom_logo_alt') %}
-  
-  {% if logo_alt %}
-    {% set logo_img_alt = media['image://webfolio/' ~ (logo_alt|first).name] %}
-    {% if not logo_img_alt %}
-      {% set logo_img_alt = media['theme://images/' ~ (logo_alt|first).name] %}
-    {% endif %}
-  {% endif %}
-
-  <a href="{{ home_url }}">
-    {{ logo_img_alt.html('', config.site.title, 'logo__img__2')|raw }}
-  </a>
-
-{% else %}
 <a href="{{ home_url }}">
   {{ logo_img.html('', config.site.title, 'logo__img')|raw }}
 </a>
-{% endif %}

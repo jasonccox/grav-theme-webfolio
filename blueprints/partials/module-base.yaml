@@ -15,7 +15,7 @@ form:
               title: Module Options
 
               fields:
-                class:
+                header.class:
                   type: text
                   label: Module Classes
                   description: A space-separated list of CSS classes to be applied to the module.

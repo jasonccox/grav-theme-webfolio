@@ -145,6 +145,10 @@ input, textarea {
 	}
 }
 
+input[type='checkbox'] {
+    width: unset;
+}
+
 button {
 	background-color: $color-accent;
 	color: $color-bg;

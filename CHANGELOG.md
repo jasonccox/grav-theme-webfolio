@@ -1,9 +1,19 @@
-# UNRELEASED
-##  [date]
+# v1.5.3
+## 04/23/2020
+
+1. [Fixed](#bugfix)
+    * Fixed "Module Classes" field in admin panel to actually control `class` Frontmatter field.
+    * Corrected link to demo site in readme.
+
+# v1.5.2
+##  03/31/2020
 
 1. [Improved](#improved)
     * Made more options editable from the Admin interface and rearranged existing options to reduce confusion.
     * Reduced code duplication in modular templates.
+    * Added explanatory comments to confusing code sections.
+1. [Fixed](#bugfix)
+    * Put checkbox and checkbox label on same line by default.
 
 # v1.5.1
 ##  11/21/2019

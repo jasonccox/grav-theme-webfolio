@@ -92,7 +92,7 @@ The `blog-post` template is used to render a blog post. You'll want to set the `
 
 ### Site-wide
 
-The following customizations are available by editing `user/config/themes/webfolio.yaml` (see the [repo for my personal site](https://gitlab.com/jasonccox/personal-site) for an example file) or via the Grav Admin interface.
+The following customizations are available by editing `user/config/themes/webfolio.yaml` (see the [repo for my personal site](https://github.com/jasonccox/personal-site) for an example file) or via the Grav Admin interface.
 
 - **Custom Logo** (`custom_logo`) - A logo image to be placed on the left side of the header throughout the site.
 - **Mobile Cusom Logo** (`custom_logo_mobile`) - A logo image to be placed at the top left of the navigation overlay on smaller screens. Note that this logo will appear on a dark background.

@@ -9,14 +9,14 @@
 .intro__img {
 	flex: 0 100%;
 	width: 50%;
-}
 
-.intro__img.rounded {
-	border-radius: 20px;
-}
+	&.rounded {
+		border-radius: 15%;
+	}
 
-.intro__img.circle {
-	border-radius: 50%;
+	&.circle {
+		border-radius: 50%;
+	}
 }
 
 .intro__content {

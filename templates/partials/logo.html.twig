@@ -18,7 +18,7 @@
     {{ logo_img.html('', config.site.title, 'logo__img__1')|raw }}
   </a>
 
-  {% set logo_alt = theme_var('custom_logo_alt') %}
+  {% set logo_alt = theme_var('custom_logo_scrolled') %}
   
   {% if logo_alt %}
     {% set logo_img_alt = media['image://webfolio/' ~ (logo_alt|first).name] %}

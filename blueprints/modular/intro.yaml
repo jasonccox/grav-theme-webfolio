@@ -59,6 +59,16 @@ form:
                   validate:
                     type: textarea
 
+                header.img_style:
+                  type: select
+                  label: Image Style
+                  description: Choose the shape of the intro image.
+                  size: medium
+                  options:
+                    square: Square
+                    circle: Circle
+                    rounded: Rounded Corners
+
                 header.center_content:
                   type: toggle
                   label: Center Content

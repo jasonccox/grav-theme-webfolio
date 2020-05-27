@@ -9,6 +9,14 @@
 .intro__img {
 	flex: 0 100%;
 	width: 50%;
+
+	&.rounded {
+		border-radius: 15%;
+	}
+
+	&.circle {
+		border-radius: 50%;
+	}
 }
 
 .intro__content {

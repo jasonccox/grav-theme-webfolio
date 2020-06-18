@@ -12,22 +12,22 @@
 
     border:1px solid;
     border-color: $color-accent-hover;
-    border-radius: 20px 90px 20px;
+    border-radius: 5rem 10rem 5rem 10rem;
     background-color: $color-bg-hover;
     transition: border-color $transition-time-hover, background-color $transition-time-hover, border-radius $transition-time-hover;
 
     .blog__card__img {
-        border-radius: 20px 90px 20px;
+        border-radius:5rem 0rem 0rem 10rem;
         transition: border-radius $transition-time-hover;
     }
     
     &:hover {
         border-color: $color-accent;
         background-color: $color-bg-code;
-        border-radius: 10px;
+        border-radius: 1rem;
 
         .blog__card__img{
-            border-radius: 10px 0px 0px 10px;
+            border-radius: 1rem 0px 0px 1rem;
         }
 
         .blog__card__content {

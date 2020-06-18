@@ -15,30 +15,30 @@
 
 	background-color: $color-bg-hover;;
 	border: 1px solid;
-	border-radius: 20px 55px 20px;
+	border-radius: 2rem 5rem 2rem;
 	border-color: $color-accent-hover;
 	transition: border-radius $transition-time-hover, border-color $transition-time-hover, background-color $transition-time-hover;
 
 	.projects__card__img {		
-		border-radius: 20px 55px 20px;
+		border-radius: 2rem 5rem 0rem 0rem;
 		transition: border-radius $transition-time-hover;
 	}
 
 	.projects__card__txt {		
-		border-radius: 20px 55px 20px;
+		border-radius: 2rem 5rem 0rem 0rem;
 		transition: border-radius $transition-time-hover;
 	}
 
 	&:hover {
-		border-radius: 10px;
+		border-radius: 1rem;
 		border-color: $color-accent;
 		background-color: $color-bg-code;
 
 		.projects__card__img {
-			border-radius: 10px 10px 0px 0px;
+			border-radius: 1rem 1rem 0rem 0rem;
 		}
 		.projects__card__txt {
-			border-radius: 10px;
+			border-radius: 1rem;
 		}
 	}
 

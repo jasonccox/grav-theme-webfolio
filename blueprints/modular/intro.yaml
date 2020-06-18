@@ -65,7 +65,7 @@ form:
                   description: Choose the shape of the intro image.
                   size: medium
                   options:
-                    '': Square
+                    square: Square
                     circle: Circle
                     rounded: Rounded Corners
 

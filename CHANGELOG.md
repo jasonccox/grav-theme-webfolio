@@ -1,3 +1,9 @@
+# v1.6.0
+## 05/26/2020
+
+1. [New](#new)
+    * The intro image can now have one of the following preset styles: square, rounded corners, circle. (Thanks to [Aashish](https://github.com/aashishvasu) for implementing this!)
+
 # v1.5.3
 ## 04/23/2020
 

@@ -5,7 +5,7 @@
 {% block module_content %}
     <div class="intro">
         {% if image %}
-            {{ image.html('', page.header.img_alt, 'intro__img {{ page.header.img_style}}')|raw }}
+            {{ image.html('', page.header.img_alt, 'intro__img ' ~ page.header.img_style)|raw }}
         {% endif %}
 
         <div class="intro__content {% if image %} with-img {% endif %} {% if page.header.center_content %} center-text {% endif %}">

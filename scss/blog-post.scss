@@ -28,6 +28,10 @@
     display: none;
 }
 
+.blog-post__comments {
+    padding: 3rem 7rem;
+}
+
 @media only screen and (min-width: $screen-m){
     .blog-post__sidebar {
         display: block;

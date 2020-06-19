@@ -25,7 +25,12 @@
                 {% set content_no_summary = content|slice(page.summary|length) %}
             {% endif %}
             {{ content_no_summary|raw }}
-        </section>
+        </section>        
+        {% if config.plugins.jscomments.enabled %}
+            <section class="blog-post__comments">
+                    {{ jscomments()|raw }}
+            </section>
+        {% endif %}
     </section>
     <!--
     <section class="blog-post__container">

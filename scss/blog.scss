@@ -6,25 +6,25 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     align-content: stretch;
 
     border:1px solid;
     border-color: $color-accent-hover;
-    border-radius: 5rem 10rem 5rem 10rem;
+    border-radius: 2rem 5rem 2rem 5rem;
     background-color: $color-bg-hover;
     transition: border-color $transition-time-hover, background-color $transition-time-hover, border-radius $transition-time-hover;
 
     .blog__card__img {
-        border-radius:5rem 0rem 0rem 10rem;
+        border-radius:2rem 0rem 0rem 5rem;
         transition: border-radius $transition-time-hover;
     }
     
     &:hover {
         border-color: $color-accent;
         background-color: $color-bg-code;
-        border-radius: 1rem;
+        border-radius: 0.7rem;
 
         .blog__card__img{
             border-radius: 1rem 0px 0px 1rem;
@@ -97,8 +97,8 @@
 @media only screen and (min-width: $screen-m) {
 	.blog__card {
         width: 100%;
-        height: 25rem;
-    
+        height: 20rem;
+        border-radius: 3rem 7rem 3rem 7rem;
         flex-direction: row;
     }
     
@@ -108,6 +108,7 @@
     
     .blog__card__img {
         flex: 0 0 40%;
+        border-radius:3rem 0rem 0rem 7rem;
         align-self: stretch;
         height: unset;
     }
@@ -129,6 +130,7 @@
 
 @media only screen and (min-width: $screen-xl) {
     .blog__card {
-        height: 20rem;
+        height: 15rem;
+        border-radius: 2rem 5rem 2rem 5rem;
     }
 }

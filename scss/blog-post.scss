@@ -29,7 +29,7 @@
 }
 
 .blog-post__comments {
-    padding: 3rem 7rem;
+    padding: 10% 0%;
 }
 
 @media only screen and (min-width: $screen-m){
@@ -45,5 +45,9 @@
         align-content: center;
         margin-left: 10px;
         margin-right: 10px;
+    }
+
+    .blog-post__comments {
+        padding: 10%;
     }
 }

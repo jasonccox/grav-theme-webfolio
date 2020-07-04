@@ -17,7 +17,7 @@ form:
                   name: projects_per_page
                   type: number
                   label: Projects Per Page
-                  description: Number of projects to show initially and each time the \"Show more\" button is pressed. Leave empty to show all projects.
+                  description: Number of projects to show initially and each time the "Show more" button is pressed. Leave empty to show all projects.
 
                 header.show_more_txt:
                   name: show_more_txt

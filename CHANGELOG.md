@@ -1,3 +1,8 @@
+# UNRELEASED
+
+1. [Fixed](#bugfix)
+    * Pages whose folders lack numeric prefix are no longer shown in the nav menu by default
+
 # v1.6.0
 ## 05/26/2020
 

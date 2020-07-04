@@ -1,21 +1,50 @@
 {% extends 'partials/module-base.html.twig' %}
+{% set projectsId = page.currentPosition %}
+{% set per_page = page.header.projects_per_page %}
+{% set show_more_txt = page.header.show_more_txt ?
+    page.header.show_more_txt :
+    page.blueprints.getDefaults.header.show_more_txt %}
 
 {% block module_content %}
-    <div class="projects">
+    <div class="projects projects-{{ projectsId }}">
         {{ content|raw }}
-        
+
         <div class="projects__cards">
             {% for project in page.header.projects %}
-                <div class="projects__card">
-                    <a href="{{ project.link }}" target="_blank">
-                        {{ page.media[project.image].html('', project.title, 'projects__card__img')|raw }}
-                        <div class="projects__card__txt">
-                            <h4>{{ project.title }}</h4>
-                            <div>{{ project.description }}</div>
-                        </div>
-                    </a>
-                </div>
+                {% set page_num = 0 %}
+                {% if per_page and per_page > 0 %}
+                    {% set page_num = loop.index0 // per_page %}
+                    {% set is_last_on_page = (loop.index0 % per_page) == (per_page - 1) %}
+                    {% set has_more_pages = loop.index < page.header.projects|length %}
+                {% endif %}
+
+                <script>
+                    addToProjectPage({{ projectsId }}, {{ page_num }},
+                        '<div class="projects__item projects__card">' +
+                            '<a href="{{ project.link }}" target="_blank">' +
+                                '{{ page.media[project.image].html("", project.title, "projects__card__img")|raw }}' +
+                                '<div class="projects__card__txt">' +
+                                    '<h4>{{ project.title }}</h4>' +
+                                    '<div>{{ project.description }}</div>' +
+                                '</div>' +
+                            '</a>' +
+                        '</div>' +
+
+                        {% if is_last_on_page and has_more_pages %}
+                            '<div class="projects__item projects__show-more--{{ page_num }}">' +
+                                '<button onClick="showProjectPage({{ projectsId }}, {{ page_num + 1 }})">' +
+                                    '{{ show_more_txt }}' +
+                                '</button>' +
+                            '</div>'
+                        {% else %}
+                            ''
+                        {% endif %}
+                    );
+                </script>
             {% endfor %}
         </div>
+        <script>
+            showProjectPage({{ projectsId }}, 0);
+        </script>
     </div>
 {% endblock %}

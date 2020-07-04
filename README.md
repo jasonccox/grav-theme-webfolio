@@ -60,6 +60,8 @@ The `projects` template shows a section containing a grid of project tiles.
 
 **Custom FrontMatter Fields**
 - `projects` - A list of projects to be shown in this section. Each project can have a `title`, `image` (name of an image file stored in the page's directory), `description`, and `link` (URL).
+- `projects_per_page`- Number of projects to show initially and each time the "Show more" button is pressed. Leave empty to show all projects.
+- `show_more_txt` - Text for button to show more projects.
 
 #### Contact
 

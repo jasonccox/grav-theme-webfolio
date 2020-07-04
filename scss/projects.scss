@@ -3,15 +3,18 @@
 	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: flex-start;
-	align-items: flex-start;
+	align-items: center;
 	align-content: center;
 }
 
-.projects__card {
+.projects__item {
 	flex: 0 calc(100% - 4rem);
 	max-width: $screen-xs;
 	margin: 2rem auto;
 	text-align: center;
+}
+
+.projects__card {
 	box-shadow: 0.3rem 0.3rem 1rem;
 	transition: box-shadow $transition-time-hover;
 
@@ -34,14 +37,14 @@
 		flex-direction: row;
 	}
 
-	.projects__card {
+	.projects__item {
 		flex: 0 calc(50% - 4rem);
 		margin: 2rem;
 	}
 }
 
 @media only screen and (min-width: $screen-m) {
-	.projects__card {
+	.projects__item {
 		flex: 0 calc(33% - 4rem);
 	}
 }

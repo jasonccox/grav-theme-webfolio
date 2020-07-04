@@ -1,5 +1,7 @@
 # UNRELEASED
 
+1. [New](#new)
+    * Custom CSS can be placed in `user/css/webfolio.css`
 1. [Fixed](#bugfix)
     * Pages whose folders lack numeric prefix are no longer shown in the nav menu by default
 

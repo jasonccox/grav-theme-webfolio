@@ -115,7 +115,7 @@ Each page can have a bit of extra customization. These properties are set within
 
 ### Advanced
 
-More stylistic elements of the site (e.g., colors, fonts, etc.) can be customized using the `css/custom.css` file within the theme. Alternatively, you can edit `scss/variables.scss` and then recompile `scss/theme.scss` into `css-compiled/theme.min.scss` using Sass.
+More stylistic elements of the site (e.g., colors, fonts, etc.) can be customized by adding a `css/webfolio.css` file inside your `user/` directory or using the `css/custom.css` file within the theme itself. Alternatively, you can edit `scss/variables.scss` and then recompile `scss/theme.scss` into `css-compiled/theme.min.scss` using Sass.
 
 > Webfolio provides several CSS classes and variables for you to use. Take a look inside `scss/util.scss` to see what they are.
 

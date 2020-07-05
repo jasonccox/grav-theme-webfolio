@@ -1,4 +1,5 @@
-# UNRELEASED
+# v1.7.0
+## 07/05/2020
 
 1. [New](#new)
     * The projects modular page can now be configured to only show a certain number of projects and a "Show more" button

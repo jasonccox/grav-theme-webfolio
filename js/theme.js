@@ -21,6 +21,27 @@ function toggleMenuExpanded(li) {
     li.toggleClass('expanded');
 }
 
+var projectPages = {};
+
+function addToProjectPage(projectsId, pageNum, html) {
+  if (!projectPages[projectsId]) {
+    projectPages[projectsId] = [];
+  }
+
+  if (projectPages[projectsId][pageNum] === undefined) {
+    projectPages[projectsId][pageNum] = '';
+  }
+
+  projectPages[projectsId][pageNum] = projectPages[projectsId][pageNum] + html;
+}
+
+function showProjectPage(projectsId, pageNum) {
+  if (projectPages[projectsId] && projectPages[projectsId][pageNum]) {
+    $('.projects-' + projectsId + ' .projects__cards').append(projectPages[projectsId][pageNum])
+  }
+  $('.projects-' + projectsId + ' .projects__show-more--' + (pageNum - 1)).remove();
+}
+
 jQuery(document).ready(function($){
 
     scrollHeader();

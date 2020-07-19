@@ -3,7 +3,7 @@
 {% macro nav_loop(pages, modular, nested) %}
   {% import _self as macros %}
   {% for p in pages %}
-    {% if p.header.visible is not same as(false) %}
+    {% if p.visible or (p.modular and p.header.visible is not same as (false)) %}
       {% set active_page = (p.active or p.activeChild) ? 'active' : '' %}
       <li>
         {% set href = '' %}

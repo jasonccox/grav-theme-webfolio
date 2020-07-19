@@ -60,6 +60,8 @@ The `projects` template shows a section containing a grid of project tiles.
 
 **Custom FrontMatter Fields**
 - `projects` - A list of projects to be shown in this section. Each project can have a `title`, `image` (name of an image file stored in the page's directory), `description`, and `link` (URL).
+- `projects_per_page`- Number of projects to show initially and each time the "Show more" button is pressed. Leave empty to show all projects.
+- `show_more_txt` - Text for button to show more projects.
 
 #### Contact
 
@@ -115,7 +117,7 @@ Each page can have a bit of extra customization. These properties are set within
 
 ### Advanced
 
-More stylistic elements of the site (e.g., colors, fonts, etc.) can be customized using the `css/custom.css` file within the theme. Alternatively, you can edit `scss/variables.scss` and then recompile `scss/theme.scss` into `css-compiled/theme.min.scss` using Sass.
+More stylistic elements of the site (e.g., colors, fonts, etc.) can be customized by adding a `css/webfolio.css` file inside your `user/` directory or using the `css/custom.css` file within the theme itself. Alternatively, you can edit `scss/variables.scss` and then recompile `scss/theme.scss` into `css-compiled/theme.min.scss` using Sass.
 
 > Webfolio provides several CSS classes and variables for you to use. Take a look inside `scss/util.scss` to see what they are.
 

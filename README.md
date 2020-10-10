@@ -123,7 +123,7 @@ More stylistic elements of the site (e.g., colors, fonts, etc.) can be customize
 
 ## Help
 
-Don't hesitate to reach out to me at [contact@jasoncarloscox.com](mailto:contact@jasoncarloscox.com) if you're having trouble using Webfolio. I'm happy to help!
+Don't hesitate to [create an issue](https://github.com/jasonccox/grav-theme-webfolio/issues) or reach out to me at [contact@jasoncarloscox.com](mailto:contact@jasoncarloscox.com) if you're having trouble using Webfolio. I'm happy to help!
 
 ## Contributing
 

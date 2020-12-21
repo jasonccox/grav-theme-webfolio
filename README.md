@@ -2,9 +2,7 @@
 
 The **Webfolio** Theme is a configurable theme for creating an online portfolio and blog with [Grav CMS](http://github.com/getgrav/grav). It is partially based on the [Quark Theme](https://github.com/getgrav/grav-theme-quark).
 
-## Sample
-
-My own personal website uses this theme. Feel free to [check it out](https://jasoncarloscox.com) or even look at the [source code](https://github.com/jasonccox/personal-site).
+My [personal website](https://jasoncarloscox.com) used to use this theme, but I've since moved on ([read why](https://jasoncarloscox.com/blog/switch-to-static.html)). However, everything should still work, and I'm still happy to answer any questions you might have. If you actively use the theme and would like to become its new maintainer, [email me](mailto:hi@jasoncarloscox.com).
 
 ## Installation
 
@@ -123,7 +121,7 @@ More stylistic elements of the site (e.g., colors, fonts, etc.) can be customize
 
 ## Help
 
-Don't hesitate to [create an issue](https://github.com/jasonccox/grav-theme-webfolio/issues) or reach out to me at [contact@jasoncarloscox.com](mailto:contact@jasoncarloscox.com) if you're having trouble using Webfolio. I'm happy to help!
+Don't hesitate to [create an issue](https://github.com/jasonccox/grav-theme-webfolio/issues) or reach out to me at [hi@jasoncarloscox.com](mailto:hi@jasoncarloscox.com) if you're having trouble using Webfolio. I'm happy to help!
 
 ## Contributing
 

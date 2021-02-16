@@ -624,7 +624,7 @@ ul.navigation ul {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   align-content: center;
 }
 
@@ -635,16 +635,18 @@ ul.navigation ul {
   text-align: center;
   background-color: var(--webfolio-color-bg-hover);
   border: 1px solid;
-  border-radius: 2rem 5rem 2rem;
+  border-radius: 2rem 4rem 2rem;
   border-color: var(--webfolio-color-accent-hover);
   transition: border-radius 0.25s, border-color 0.25s, background-color 0.25s;
 }
 .projects__item .projects__card__img {
-  border-radius: 2rem 5rem 0rem 0rem;
+  border-radius: 2rem 4rem 0rem 0rem;
+  padding: 2rem;
   transition: border-radius 0.25s;
 }
 .projects__item .projects__card__txt {
-  border-radius: 2rem 5rem 0rem 0rem;
+  border-radius: 2rem 4rem 0rem 0rem;
+  padding: 1rem;
   transition: border-radius 0.25s;
 }
 .projects__item:hover {

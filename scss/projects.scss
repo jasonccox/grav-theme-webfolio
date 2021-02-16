@@ -3,7 +3,7 @@
 	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: flex-start;
-	align-items: center;
+	align-items:flex-start;
 	align-content: center;
 }
 
@@ -15,17 +15,19 @@
 
 	background-color: $color-bg-hover;;
 	border: 1px solid;
-	border-radius: 2rem 5rem 2rem;
+	border-radius: 2rem 4rem 2rem;
 	border-color: $color-accent-hover;
 	transition: border-radius $transition-time-hover, border-color $transition-time-hover, background-color $transition-time-hover;
 
 	.projects__card__img {		
-		border-radius: 2rem 5rem 0rem 0rem;
+		border-radius: 2rem 4rem 0rem 0rem;
+		padding: 2rem;
 		transition: border-radius $transition-time-hover;
 	}
 
 	.projects__card__txt {		
-		border-radius: 2rem 5rem 0rem 0rem;
+		border-radius: 2rem 4rem 0rem 0rem;
+		padding: 1rem;
 		transition: border-radius $transition-time-hover;
 	}
 

@@ -212,3 +212,36 @@ code {
 	font-family: $font-family-mono;
 	font-size: $font-size-s * 0.8;
 }
+
+.label {
+	display: inline-block;
+	font-family: $font-family-header;
+	font-weight: $font-weight-normal;
+	// Label rounded
+	&.label-rounded {
+		background-color: $color-accent;
+		border-radius: 5rem;
+		padding-left: .4rem;
+		padding-right: .4rem;
+	}
+	&.label-round-rect {
+		background-color: $color-bg;
+		border-radius: 10%;
+		padding-top: .2rem;
+		padding-bottom: .2rem;
+		padding-left: .6rem;
+		padding-right: .6rem;
+	}
+	&.label-primary {
+		color: $color-bg;
+	}
+	&.label-secondary {
+		color: $color-bg-alt;
+	}
+	&.label-accent {
+		color: $color-accent;
+	}
+	&.label-accent-alt {
+		color: $color-accent-hover;
+	}
+}

@@ -1,0 +1,10 @@
+{% set taxlist = children_only is defined ? taxonomylist.getChildPagesTags() : taxonomylist.get() %}
+
+{% if taxlist %}
+<span class="tags">
+    {% for tax,value in taxlist[taxonomy] %}
+        {% set label_class = uri.param(taxonomy) == tax ? 'label-accent' : 'label-accent' %}
+        <a class="label label-round-rect {{ label_class }}" href="{{ base_url }}/blog/{{ taxonomy }}{{ config.system.param_sep }}{{ tax }}">{{ tax }}</a>
+    {% endfor %}
+</span>
+{% endif %}

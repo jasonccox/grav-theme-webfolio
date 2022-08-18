@@ -32,13 +32,26 @@
             </section>
         {% endif %}
     </section>
-    {% if config.plugins.archives.enabled %}
-        <section class="blog-post__container">
+    
+    <section class="blog-post__container">
+        {% if config.plugins.archives.enabled %}
             <div class="blog-post__sidebar">
                 <h6>Archive</h6>
                 {% include "partials/archives.html.twig" %}
             </div>
+        {% endif %}
+        {% if config.plugins.taxonomylist.enabled %}
+            <div class="blog-post__sidebar">
+                <h6>Tags</h6>
+                {% include 'partials/taxonomylist.html.twig' with {'base_url':new_base_url, 'taxonomy':'tag'} %}
+            </div>
+        {% endif %}
+    </section>
+    
+   
+        <section class="blog-post__container">
+            
         </section>
-    {% endif %}
+    
 </section>
 {% endblock %}

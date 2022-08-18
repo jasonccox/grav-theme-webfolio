@@ -32,13 +32,13 @@
             </section>
         {% endif %}
     </section>
-    <!--
-    <section class="blog-post__container">
-        <div class="blog-post__sidebar">
-            <h6>Other Posts</h6>
-            
-        </div>
-    </section>
-    -->
+    {% if config.plugins.archives.enabled %}
+        <section class="blog-post__container">
+            <div class="blog-post__sidebar">
+                <h6>Archive</h6>
+                {% include "partials/archives.html.twig" %}
+            </div>
+        </section>
+    {% endif %}
 </section>
 {% endblock %}

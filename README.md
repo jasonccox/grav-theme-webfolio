@@ -1,8 +1,19 @@
+## IMPORTANT: Fork differences
+The original project maintained by Jason [here](https://github.com/jasonccox/grav-theme-webfolio) is no longer under active development. However, since I do actively use this theme for [my personal website](https://www.aashishvasudevan.com/) and have contributed a couple additions to the original webfolio theme, I'm still maintaining my fork. I've done my best to edit the original readme to better include the features that I have added, and removed parts that are not relevant to my fork of Webfolio.
+
+I'm not a web developer though, so expect minimal changes (other than occasional bug fixes to keep it working with Grav). Obviously if Jason ever updates his version, I will try to integrate those changes into my fork.
+
+**Here are some of the main differences, off the top of my head:**
+* Changed the title font to Ubuntu and changed font weights and sizes all over the theme
+* Slightly changed the way (and where) theme colours are used in the theme
+* Removed all instances of drop shadow for a more animated curved look (I just dont like drop shadows)
+* Added a way to have two different versions of the logo for when you scroll down and when you're at the top of the page
+* Added support for the [JSComments](https://github.com/Sommerregen/grav-plugin-jscomments) plugin for adding custom commenting on the `blog-post` template
+* Added support for the [Archives](https://github.com/getgrav/grav-plugin-archives) plugin in the form of a simple sidebar on the `blog-post` template
+
 # Webfolio Theme
 
 The **Webfolio** Theme is a configurable theme for creating an online portfolio and blog with [Grav CMS](http://github.com/getgrav/grav). It is partially based on the [Quark Theme](https://github.com/getgrav/grav-theme-quark).
-
-My [personal website](https://jasoncarloscox.com) used to use this theme, but I've since moved on ([read why](https://jasoncarloscox.com/blog/switch-to-static.html)). However, everything should still work, and I'm still happy to answer any questions you might have. If you actively use the theme and would like to become its new maintainer, [email me](mailto:webfolio@jasoncarloscox.com).
 
 ## Installation
 
@@ -121,9 +132,8 @@ More stylistic elements of the site (e.g., colors, fonts, etc.) can be customize
 
 ## Help
 
-Don't hesitate to [create an issue](https://github.com/jasonccox/grav-theme-webfolio/issues) or reach out to me at [webfolio@jasoncarloscox.com](mailto:webfolio@jasoncarloscox.com) if you're having trouble using Webfolio. I'm happy to help!
+Don't hesitate to [create an issue](https://github.com/aashishvasu/grav-theme-webfolio/issues) or reach out to me at [aashishvasudevan@gmail.com](mailto:aashishvasudevan@gmail.com) if you're having trouble using Webfolio. I'm happy to help!
 
 ## Contributing
 
 Feel free to submit an issue or merge request if you see a way to make this theme better! I'm very thankful for the following people for their contributions:
-- [Aashish Vasudevan](https://github.com/aashishvasu)
